@@ -1,10 +1,10 @@
-import LuxuryNavbar from "@/components/furniture/LuxuryNavbar";
 import LuxuryFooter from "@/components/furniture/LuxuryFooter";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import LuxuryNavbar from "@/components/furniture/LuxuryNavbar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Award, Users, Clock, Shield, Hammer, Ruler, Palette, Zap } from "lucide-react";
+import { ArrowRight, Hammer, Palette, Ruler, Zap } from "lucide-react";
 
 const craftsmanshipProcess = [
     {
@@ -208,7 +208,7 @@ export default function CraftsmanshipPage() {
                                     <p className="text-muted-foreground text-sm mb-2">{craftsman.experience} • {craftsman.specialty}</p>
                                     <Separator className="my-4" />
                                     <blockquote className="text-muted-foreground text-sm italic">
-                                        "{craftsman.quote}"
+                                        &apos;{craftsman.quote}&apos;
                                     </blockquote>
                                 </CardContent>
                             </Card>

@@ -41,7 +41,7 @@ export default function ContactSection() {
                         Get in Touch
                     </Badge>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-black mb-6">
-                        Let's Create Together
+                        Let&apos;s Create Together
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                         Ready to transform your space? Our design experts are here to help you bring your vision to life.
@@ -137,7 +137,7 @@ export default function ContactSection() {
                                 Contact Information
                             </h3>
                             <p className="text-muted-foreground mb-8">
-                                We're here to help you create the perfect space. Reach out to us through any of the channels below.
+                                We&apos;re here to help you create the perfect space. Reach out to us through any of the channels below.
                             </p>
                         </div>
 

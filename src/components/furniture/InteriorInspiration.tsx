@@ -155,7 +155,7 @@ export default function InteriorInspiration() {
                         </h3>
                         <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
                             Our design experts are here to help you bring your vision to life.
-                            Schedule a consultation and let's transform your space together.
+                            Schedule a consultation and let&apos;s transform your space together.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg">

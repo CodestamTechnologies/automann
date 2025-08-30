@@ -91,7 +91,7 @@ export default function TestimonialsSection() {
                                 </div>
 
                                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                                    "{testimonial.content}"
+                                    &dblquote;{testimonial.content}&dblquote;
                                 </p>
 
                                 <div className="flex items-center space-x-3">
