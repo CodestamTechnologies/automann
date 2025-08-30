@@ -89,7 +89,7 @@ export default function Testimonials() {
                                         <div className="flex items-center space-x-3">
                                             <Avatar className="h-12 w-12">
                                                 <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                                <AvatarFallback>{testimonial.name.split(&apos; &apos;).map(n => n[0]).join(&apos;&apos;)}</AvatarFallback>
+                                                <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                                             </Avatar>
                                             <div>
                                                 <h4 className="font-semibold text-sm">{testimonial.name}</h4>
@@ -109,8 +109,8 @@ export default function Testimonials() {
                                             <Star
                                                 key={i}
                                                 className={`h-4 w-4 ${i < testimonial.rating
-                                                        ? "fill-yellow-400 text-yellow-400"
-                                                        : "fill-gray-200 text-gray-200"
+                                                    ? "fill-yellow-400 text-yellow-400"
+                                                    : "fill-gray-200 text-gray-200"
                                                     }`}
                                             />
                                         ))}
