@@ -121,7 +121,7 @@ export default function Testimonials() {
 
                                     {/* Content */}
                                     <p className="text-sm text-muted-foreground leading-relaxed">
-                                        "{testimonial.content}"
+                                        &quot;{testimonial.content}&quot;
                                     </p>
 
                                     {/* Purchase Info */}
