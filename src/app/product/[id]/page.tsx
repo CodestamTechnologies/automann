@@ -69,8 +69,9 @@ const getProductById = (id: string) => {
     return products.find(p => p.id === id);
 };
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-    const product = getProductById(params.id);
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const product = getProductById(id);
 
     if (!product) {
         return (
@@ -153,8 +154,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                         <Star
                                             key={i}
                                             className={`h-4 w-4 ${i < Math.floor(product.rating)
-                                                    ? "fill-yellow-400 text-yellow-400"
-                                                    : "fill-gray-200 text-gray-200"
+                                                ? "fill-yellow-400 text-yellow-400"
+                                                : "fill-gray-200 text-gray-200"
                                                 }`}
                                         />
                                     ))}
