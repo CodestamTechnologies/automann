@@ -57,7 +57,7 @@ export default function WomenPage() {
                 <div className="container mx-auto px-4">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">Women's Fashion</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4">Women&apos;s Fashion</h1>
                         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                             Discover elegant dresses, stylish tops, trendy bottoms, and sophisticated outerwear designed for the modern woman.
                         </p>
@@ -135,7 +135,7 @@ export default function WomenPage() {
                     <div className="text-center mt-12">
                         <Button variant="outline" size="lg" asChild>
                             <Link href="/products">
-                                View All Women's Products
+                                View All Women&apos;s Products
                             </Link>
                         </Button>
                     </div>

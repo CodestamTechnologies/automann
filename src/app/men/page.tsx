@@ -57,7 +57,7 @@ export default function MenPage() {
                 <div className="container mx-auto px-4">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">Men's Fashion</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4">Men&apos;s Fashion</h1>
                         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                             Discover sophisticated shirts, comfortable pants, smart jackets, and premium accessories for the modern gentleman.
                         </p>
@@ -135,7 +135,7 @@ export default function MenPage() {
                     <div className="text-center mt-12">
                         <Button variant="outline" size="lg" asChild>
                             <Link href="/products">
-                                View All Men's Products
+                                View All Men&apos;s Products
                             </Link>
                         </Button>
                     </div>

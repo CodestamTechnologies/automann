@@ -20,8 +20,8 @@ import {
 
 const footerLinks = {
     shop: [
-        { name: "Women's Fashion", href: "/women" },
-        { name: "Men's Fashion", href: "/men" },
+        { name: "Women&apos;s Fashion", href: "/women" },
+        { name: "Men&apos;s Fashion", href: "/men" },
         { name: "Accessories", href: "/accessories" },
         { name: "Footwear", href: "/footwear" },
         { name: "New Arrivals", href: "/new-arrivals" },

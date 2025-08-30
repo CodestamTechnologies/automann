@@ -29,9 +29,9 @@ const heroSlides = [
     },
     {
         id: 3,
-        title: "Men's Essentials",
+        title: "Men&apos;s Essentials",
         subtitle: "Timeless style for modern men",
-        description: "Quality craftsmanship meets contemporary design in our men's collection.",
+        description: "Quality craftsmanship meets contemporary design in our men&apos;s collection.",
         cta: "Shop Men",
         ctaLink: "/men",
         badge: "Best Sellers",
@@ -144,11 +144,11 @@ export default function Hero() {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap justify-center gap-4 text-white/90">
                         <Link href="/women" className="hover:text-white transition-colors">
-                            Women's Fashion
+                            Women&apos;s Fashion
                         </Link>
                         <span className="text-white/50">•</span>
                         <Link href="/men" className="hover:text-white transition-colors">
-                            Men's Fashion
+                            Men&apos;s Fashion
                         </Link>
                         <span className="text-white/50">•</span>
                         <Link href="/accessories" className="hover:text-white transition-colors">

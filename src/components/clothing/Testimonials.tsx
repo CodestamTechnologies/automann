@@ -32,7 +32,7 @@ const testimonials = [
         role: "Student",
         avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         rating: 4,
-        content: "Great prices for such high-quality items! The accessories collection is amazing. I've received so many compliments on my new jewelry.",
+        content: "Great prices for such high-quality items! The accessories collection is amazing. I&apos;ve received so many compliments on my new jewelry.",
         verified: true,
         purchase: "Statement Jewelry Set"
     },
@@ -52,7 +52,7 @@ const testimonials = [
         role: "Interior Designer",
         avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
         rating: 5,
-        content: "As someone who values aesthetics, I'm impressed by their attention to detail. Every piece feels thoughtfully designed and crafted.",
+        content: "As someone who values aesthetics, I&apos;m impressed by their attention to detail. Every piece feels thoughtfully designed and crafted.",
         verified: true,
         purchase: "Designer Handbag"
     },
@@ -75,7 +75,7 @@ export default function Testimonials() {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                        Don't just take our word for it. Here's what our valued customers have to say about their shopping experience.
+                        Don&apos;t just take our word for it. Here&apos;s what our valued customers have to say about their shopping experience.
                     </p>
                 </div>
 
@@ -89,7 +89,7 @@ export default function Testimonials() {
                                         <div className="flex items-center space-x-3">
                                             <Avatar className="h-12 w-12">
                                                 <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                                <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                                                <AvatarFallback>{testimonial.name.split(&apos; &apos;).map(n => n[0]).join(&apos;&apos;)}</AvatarFallback>
                                             </Avatar>
                                             <div>
                                                 <h4 className="font-semibold text-sm">{testimonial.name}</h4>

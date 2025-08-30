@@ -121,7 +121,7 @@ export default function Newsletter() {
                                                     Successfully Subscribed!
                                                 </h3>
                                                 <p className="text-muted-foreground">
-                                                    Thank you for subscribing. You'll receive our next newsletter soon.
+                                                    Thank you for subscribing. You&apos;ll receive our next newsletter soon.
                                                 </p>
                                             </div>
                                             <Button

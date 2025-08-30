@@ -76,7 +76,7 @@ export default function SalePage() {
                         </Badge>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Sale Items</h1>
                         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                            Don't miss out on these incredible deals! Limited time offers on premium fashion items.
+                            Don&apos;t miss out on these incredible deals! Limited time offers on premium fashion items.
                         </p>
                     </div>
 
@@ -146,7 +146,7 @@ export default function SalePage() {
                             <ul className="text-sm text-muted-foreground space-y-2 text-left max-w-md mx-auto">
                                 <li>• Sale items are final sale - no returns or exchanges</li>
                                 <li>• Limited quantities available</li>
-                                <li>• Sale ends soon - don't miss out!</li>
+                                <li>• Sale ends soon - don&apos;t miss out!</li>
                                 <li>• Free shipping on orders over $50</li>
                             </ul>
                         </div>

@@ -79,7 +79,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 <main className="py-16">
                     <div className="container mx-auto px-4 text-center">
                         <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-                        <p className="text-muted-foreground mb-8">The product you're looking for doesn't exist.</p>
+                        <p className="text-muted-foreground mb-8">The product you&apos;re looking for doesn&apos;t exist.</p>
                         <Button asChild>
                             <Link href="/">Back to Home</Link>
                         </Button>
