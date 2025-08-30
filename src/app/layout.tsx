@@ -10,8 +10,8 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ÉLÉGANCE - Luxury Furniture",
-  description: "Discover bespoke furniture that transforms your space into a sanctuary of sophistication and comfort.",
+  title: "STYLEHUB - Premium Fashion Store",
+  description: "Discover the latest trends in fashion. Shop premium clothing, accessories, and footwear for every occasion.",
 };
 
 export default function RootLayout({
