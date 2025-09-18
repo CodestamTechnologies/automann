@@ -1,20 +1,18 @@
-import Navbar from "@/components/eco/Navbar";
-import Hero from "@/components/eco/Hero";
-import FeaturedProducts from "@/components/eco/FeaturedProducts";
-import SustainabilityImpact from "@/components/eco/SustainabilityImpact";
-import WellnessTips from "@/components/eco/WellnessTips";
-import Community from "@/components/eco/Community";
-import Footer from "@/components/eco/Footer";
+import Navbar from "@/components/luxury/Navbar";
+import Hero from "@/components/luxury/Hero";
+import FeaturedDestinations from "@/components/luxury/FeaturedDestinations";
+import LuxuryExperiences from "@/components/luxury/LuxuryExperiences";
+import Testimonials from "@/components/luxury/Testimonials";
+import Footer from "@/components/luxury/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <FeaturedProducts />
-      <SustainabilityImpact />
-      <WellnessTips />
-      <Community />
+      <FeaturedDestinations />
+      <LuxuryExperiences />
+      <Testimonials />
       <Footer />
     </div>
   );

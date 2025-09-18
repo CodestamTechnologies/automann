@@ -10,24 +10,24 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "EcoVibe - Sustainable Living &amp; Wellness",
-  description: "Discover the art of sustainable living with EcoVibe. Explore eco-friendly products, wellness tips, organic lifestyle guides, and join our community of conscious living enthusiasts.",
+  title: "Alpine Luxe - Premium Mountain Adventures &amp; Luxury Travel",
+  description: "Experience the world&apos;s most exclusive mountain destinations with Alpine Luxe. Luxury alpine adventures, helicopter tours, premium expeditions, and unparalleled service in breathtaking mountain settings.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
-  keywords: ["sustainable living", "eco-friendly", "organic lifestyle", "wellness", "green products", "environmental consciousness", "natural living", "zero waste"],
+  keywords: ["luxury travel", "mountain adventures", "alpine expeditions", "helicopter tours", "premium travel", "luxury mountain resorts", "exclusive destinations", "high-end tourism"],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "EcoVibe - Sustainable Living &amp; Wellness",
-    description: "Discover the art of sustainable living with EcoVibe. Explore eco-friendly products, wellness tips, organic lifestyle guides, and join our community of conscious living enthusiasts.",
+    title: "Alpine Luxe - Premium Mountain Adventures &amp; Luxury Travel",
+    description: "Experience the world&apos;s most exclusive mountain destinations with Alpine Luxe. Luxury alpine adventures, helicopter tours, premium expeditions, and unparalleled service.",
     url: "https://codestam.com",
-    siteName: "EcoVibe",
+    siteName: "Alpine Luxe",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "EcoVibe - Sustainable Living &amp; Wellness",
-    description: "Discover the art of sustainable living with EcoVibe. Explore eco-friendly products, wellness tips, organic lifestyle guides, and join our community of conscious living enthusiasts.",
+    title: "Alpine Luxe - Premium Mountain Adventures &amp; Luxury Travel",
+    description: "Experience the world&apos;s most exclusive mountain destinations with Alpine Luxe. Luxury alpine adventures, helicopter tours, premium expeditions, and unparalleled service.",
   },
 };
 

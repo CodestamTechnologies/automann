@@ -44,73 +44,73 @@
 }
 
 :root {
-  --radius: 0.5rem;
-  --background: oklch(0.98 0.01 85);
-  --foreground: oklch(0.15 0.02 85);
-  --card: oklch(0.96 0.01 85);
-  --card-foreground: oklch(0.15 0.02 85);
-  --popover: oklch(0.96 0.01 85);
-  --popover-foreground: oklch(0.15 0.02 85);
-  /* Warm earth green primary */
-  --primary: oklch(0.45 0.12 140);
-  --primary-foreground: oklch(0.98 0.01 85);
-  --secondary: oklch(0.92 0.02 85);
-  --secondary-foreground: oklch(0.25 0.03 85);
-  --muted: oklch(0.94 0.01 85);
-  --muted-foreground: oklch(0.45 0.02 85);
-  --accent: oklch(0.65 0.08 60);
-  --accent-foreground: oklch(0.98 0.01 85);
+  --radius: 0.75rem;
+  --background: oklch(0.97 0.005 240);
+  --foreground: oklch(0.15 0.01 240);
+  --card: oklch(0.95 0.005 240);
+  --card-foreground: oklch(0.15 0.01 240);
+  --popover: oklch(0.95 0.005 240);
+  --popover-foreground: oklch(0.15 0.01 240);
+  /* Luxury gold primary */
+  --primary: oklch(0.65 0.15 85);
+  --primary-foreground: oklch(0.15 0.01 240);
+  --secondary: oklch(0.90 0.01 240);
+  --secondary-foreground: oklch(0.25 0.01 240);
+  --muted: oklch(0.92 0.005 240);
+  --muted-foreground: oklch(0.45 0.01 240);
+  --accent: oklch(0.55 0.12 220);
+  --accent-foreground: oklch(0.97 0.005 240);
   --destructive: oklch(0.55 0.15 25);
-  --border: oklch(0.88 0.02 85);
-  --input: oklch(0.96 0.01 85);
-  --ring: oklch(0.45 0.12 140);
-  /* Natural earth tone charts */
-  --chart-1: oklch(0.45 0.12 140);
-  --chart-2: oklch(0.65 0.08 60);
-  --chart-3: oklch(0.55 0.15 25);
-  --chart-4: oklch(0.35 0.08 180);
-  --chart-5: oklch(0.75 0.06 120);
-  --sidebar: oklch(0.96 0.01 85);
-  --sidebar-foreground: oklch(0.15 0.02 85);
+  --border: oklch(0.85 0.01 240);
+  --input: oklch(0.95 0.005 240);
+  --ring: oklch(0.65 0.15 85);
+  /* Luxury mountain charts */
+  --chart-1: oklch(0.65 0.15 85);
+  --chart-2: oklch(0.55 0.12 220);
+  --chart-3: oklch(0.25 0.02 240);
+  --chart-4: oklch(0.75 0.08 200);
+  --chart-5: oklch(0.45 0.10 260);
+  --sidebar: oklch(0.95 0.005 240);
+  --sidebar-foreground: oklch(0.15 0.01 240);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
-  --sidebar-accent: oklch(0.65 0.08 60);
-  --sidebar-accent-foreground: oklch(0.98 0.01 85);
-  --sidebar-border: oklch(0.88 0.02 85);
+  --sidebar-accent: oklch(0.55 0.12 220);
+  --sidebar-accent-foreground: oklch(0.97 0.005 240);
+  --sidebar-border: oklch(0.85 0.01 240);
   --sidebar-ring: var(--ring);
 }
 
 .dark {
-  --background: oklch(0.12 0.02 85);
-  --foreground: oklch(0.92 0.01 85);
-  --card: oklch(0.15 0.02 85);
-  --card-foreground: oklch(0.92 0.01 85);
-  --popover: oklch(0.15 0.02 85);
-  --popover-foreground: oklch(0.92 0.01 85);
-  --primary: oklch(0.65 0.15 140);
-  --primary-foreground: oklch(0.12 0.02 85);
-  --secondary: oklch(0.18 0.02 85);
-  --secondary-foreground: oklch(0.85 0.01 85);
-  --muted: oklch(0.20 0.02 85);
-  --muted-foreground: oklch(0.65 0.01 85);
-  --accent: oklch(0.75 0.10 60);
-  --accent-foreground: oklch(0.12 0.02 85);
+  --background: oklch(0.08 0.01 240);
+  --foreground: oklch(0.95 0.005 240);
+  --card: oklch(0.12 0.01 240);
+  --card-foreground: oklch(0.95 0.005 240);
+  --popover: oklch(0.12 0.01 240);
+  --popover-foreground: oklch(0.95 0.005 240);
+  --primary: oklch(0.75 0.18 85);
+  --primary-foreground: oklch(0.08 0.01 240);
+  --secondary: oklch(0.15 0.01 240);
+  --secondary-foreground: oklch(0.85 0.005 240);
+  --muted: oklch(0.18 0.01 240);
+  --muted-foreground: oklch(0.65 0.005 240);
+  --accent: oklch(0.65 0.15 220);
+  --accent-foreground: oklch(0.08 0.01 240);
   --destructive: oklch(0.65 0.18 25);
-  --border: oklch(0.25 0.02 85);
-  --input: oklch(0.18 0.02 85);
-  --ring: oklch(0.65 0.15 140);
-  --chart-1: oklch(0.65 0.15 140);
-  --chart-2: oklch(0.75 0.10 60);
-  --chart-3: oklch(0.65 0.18 25);
-  --chart-4: oklch(0.55 0.10 180);
-  --chart-5: oklch(0.85 0.08 120);
-  --sidebar: oklch(0.15 0.02 85);
-  --sidebar-foreground: oklch(0.92 0.01 85);
+  --border: oklch(0.22 0.01 240);
+  --input: oklch(0.15 0.01 240);
+  --ring: oklch(0.75 0.18 85);
+  --chart-1: oklch(0.75 0.18 85);
+  --chart-2: oklch(0.65 0.15 220);
+  --chart-3: oklch(0.35 0.02 240);
+  --chart-4: oklch(0.85 0.10 200);
+  --chart-5: oklch(0.55 0.12 260);
+  --sidebar: oklch(0.12 0.01 240);
+  --sidebar-foreground: oklch(0.95 0.005 240);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
-  --sidebar-accent: oklch(0.75 0.10 60);
-  --sidebar-accent-foreground: oklch(0.12 0.02 85);
-  --sidebar-border: oklch(0.25 0.02 85);
+  --sidebar-accent: oklch(0.65 0.15 220);
+  --sidebar-accent-foreground: oklch(0.08 0.01 240);
+  --sidebar-border: oklch(0.22 0.01 240);
   --sidebar-ring: var(--ring);
 }
 
@@ -124,40 +124,74 @@
   }
 }
 
-/* Natural & Organic Effects */
+/* Luxury Mountain Theme Custom Classes */
+.luxury-gradient {
+  background: linear-gradient(135deg, oklch(0.08 0.01 240) 0%, oklch(0.15 0.02 240) 50%, oklch(0.25 0.03 240) 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, oklch(0.65 0.15 85) 0%, oklch(0.75 0.18 85) 50%, oklch(0.85 0.12 85) 100%);
+}
+
+.mountain-shadow {
+  box-shadow: 0 20px 40px -12px oklch(0.08 0.01 240 / 0.25), 0 8px 16px -8px oklch(0.08 0.01 240 / 0.3);
+}
+
+.luxury-border {
+  border: 1px solid oklch(0.75 0.18 85 / 0.2);
+}
+
+.alpine-glow {
+  box-shadow: 0 0 20px oklch(0.75 0.18 85 / 0.3), 0 0 40px oklch(0.75 0.18 85 / 0.1);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, oklch(0.65 0.15 85), oklch(0.85 0.12 85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Luxury Mountain Effects */
 @layer utilities {
-  .organic-shadow {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  .luxury-shadow {
+    box-shadow: 0 8px 32px oklch(0.08 0.01 240 / 0.12), 0 4px 16px oklch(0.08 0.01 240 / 0.08);
   }
   
-  .leaf-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-opacity='0.02'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+  .mountain-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23000' stroke-opacity='0.03' stroke-width='1'%3E%3Cpath d='M10 40l10-20 10 20 10-20 10 20'/%3E%3Cpath d='M10 20l10-20 10 20 10-20 10 20'/%3E%3C/g%3E%3C/svg%3E");
   }
   
-  .gradient-earth {
+  .gradient-luxury {
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
   }
   
-  .floating-animation {
-    animation: float 6s ease-in-out infinite;
+  .elevation-animation {
+    animation: elevate 8s ease-in-out infinite;
   }
   
-  .grow-on-hover {
-    transition: transform 0.3s ease;
+  .luxury-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .grow-on-hover:hover {
-    transform: scale(1.05);
+  .luxury-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px oklch(0.08 0.01 240 / 0.15);
   }
   
-  .nature-blur {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.8);
+  .alpine-blur {
+    backdrop-filter: blur(16px);
+    background: oklch(0.95 0.005 240 / 0.8);
   }
   
-  .dark .nature-blur {
-    background: rgba(0, 0, 0, 0.3);
+  .dark .alpine-blur {
+    background: oklch(0.08 0.01 240 / 0.8);
   }
+}
+
+@keyframes elevate {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
 }
 
 @keyframes float {
