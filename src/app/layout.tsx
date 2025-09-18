@@ -10,24 +10,24 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NEON FLUX - Digital Art Portfolio",
-  description: "Immerse yourself in the cyberpunk future of digital art. Explore cutting-edge digital creations, NFT collections, and futuristic visual experiences.",
+  title: "EcoVibe - Sustainable Living &amp; Wellness",
+  description: "Discover the art of sustainable living with EcoVibe. Explore eco-friendly products, wellness tips, organic lifestyle guides, and join our community of conscious living enthusiasts.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
-  keywords: ["digital art", "cyberpunk", "NFT", "portfolio", "futuristic", "neon", "cyber", "art gallery"],
+  keywords: ["sustainable living", "eco-friendly", "organic lifestyle", "wellness", "green products", "environmental consciousness", "natural living", "zero waste"],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "NEON FLUX - Digital Art Portfolio",
-    description: "Immerse yourself in the cyberpunk future of digital art. Explore cutting-edge digital creations, NFT collections, and futuristic visual experiences.",
+    title: "EcoVibe - Sustainable Living &amp; Wellness",
+    description: "Discover the art of sustainable living with EcoVibe. Explore eco-friendly products, wellness tips, organic lifestyle guides, and join our community of conscious living enthusiasts.",
     url: "https://codestam.com",
-    siteName: "NEON FLUX",
+    siteName: "EcoVibe",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEON FLUX - Digital Art Portfolio",
-    description: "Immerse yourself in the cyberpunk future of digital art. Explore cutting-edge digital creations, NFT collections, and futuristic visual experiences.",
+    title: "EcoVibe - Sustainable Living &amp; Wellness",
+    description: "Discover the art of sustainable living with EcoVibe. Explore eco-friendly products, wellness tips, organic lifestyle guides, and join our community of conscious living enthusiasts.",
   },
 };
 

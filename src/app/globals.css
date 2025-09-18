@@ -44,73 +44,73 @@
 }
 
 :root {
-  --radius: 0.125rem;
-  --background: oklch(0.08 0.02 240);
-  --foreground: oklch(0.95 0.05 180);
-  --card: oklch(0.12 0.03 240);
-  --card-foreground: oklch(0.95 0.05 180);
-  --popover: oklch(0.12 0.03 240);
-  --popover-foreground: oklch(0.95 0.05 180);
-  /* Neon cyan primary */
-  --primary: oklch(0.75 0.25 180);
-  --primary-foreground: oklch(0.08 0.02 240);
-  --secondary: oklch(0.15 0.04 240);
-  --secondary-foreground: oklch(0.85 0.08 300);
-  --muted: oklch(0.18 0.03 240);
-  --muted-foreground: oklch(0.65 0.06 180);
-  --accent: oklch(0.72 0.28 300);
-  --accent-foreground: oklch(0.08 0.02 240);
-  --destructive: oklch(0.68 0.32 0);
-  --border: oklch(0.25 0.05 240);
-  --input: oklch(0.15 0.04 240);
-  --ring: oklch(0.75 0.25 180);
-  /* Cyberpunk neon charts */
-  --chart-1: oklch(0.75 0.25 180);
-  --chart-2: oklch(0.72 0.28 300);
-  --chart-3: oklch(0.68 0.32 0);
-  --chart-4: oklch(0.78 0.22 60);
-  --chart-5: oklch(0.65 0.35 120);
-  --sidebar: oklch(0.12 0.03 240);
-  --sidebar-foreground: oklch(0.95 0.05 180);
+  --radius: 0.5rem;
+  --background: oklch(0.98 0.01 85);
+  --foreground: oklch(0.15 0.02 85);
+  --card: oklch(0.96 0.01 85);
+  --card-foreground: oklch(0.15 0.02 85);
+  --popover: oklch(0.96 0.01 85);
+  --popover-foreground: oklch(0.15 0.02 85);
+  /* Warm earth green primary */
+  --primary: oklch(0.45 0.12 140);
+  --primary-foreground: oklch(0.98 0.01 85);
+  --secondary: oklch(0.92 0.02 85);
+  --secondary-foreground: oklch(0.25 0.03 85);
+  --muted: oklch(0.94 0.01 85);
+  --muted-foreground: oklch(0.45 0.02 85);
+  --accent: oklch(0.65 0.08 60);
+  --accent-foreground: oklch(0.98 0.01 85);
+  --destructive: oklch(0.55 0.15 25);
+  --border: oklch(0.88 0.02 85);
+  --input: oklch(0.96 0.01 85);
+  --ring: oklch(0.45 0.12 140);
+  /* Natural earth tone charts */
+  --chart-1: oklch(0.45 0.12 140);
+  --chart-2: oklch(0.65 0.08 60);
+  --chart-3: oklch(0.55 0.15 25);
+  --chart-4: oklch(0.35 0.08 180);
+  --chart-5: oklch(0.75 0.06 120);
+  --sidebar: oklch(0.96 0.01 85);
+  --sidebar-foreground: oklch(0.15 0.02 85);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
-  --sidebar-accent: oklch(0.72 0.28 300);
-  --sidebar-accent-foreground: oklch(0.08 0.02 240);
-  --sidebar-border: oklch(0.25 0.05 240);
+  --sidebar-accent: oklch(0.65 0.08 60);
+  --sidebar-accent-foreground: oklch(0.98 0.01 85);
+  --sidebar-border: oklch(0.88 0.02 85);
   --sidebar-ring: var(--ring);
 }
 
 .dark {
-  --background: oklch(0.05 0.01 240);
-  --foreground: oklch(0.98 0.08 180);
-  --card: oklch(0.08 0.02 240);
-  --card-foreground: oklch(0.98 0.08 180);
-  --popover: oklch(0.08 0.02 240);
-  --popover-foreground: oklch(0.98 0.08 180);
-  --primary: oklch(0.82 0.32 180);
-  --primary-foreground: oklch(0.05 0.01 240);
-  --secondary: oklch(0.12 0.03 240);
-  --secondary-foreground: oklch(0.88 0.12 300);
-  --muted: oklch(0.15 0.02 240);
-  --muted-foreground: oklch(0.72 0.08 180);
-  --accent: oklch(0.78 0.35 300);
-  --accent-foreground: oklch(0.05 0.01 240);
-  --destructive: oklch(0.75 0.38 0);
-  --border: oklch(0.22 0.04 240);
-  --input: oklch(0.12 0.03 240);
-  --ring: oklch(0.82 0.32 180);
-  --chart-1: oklch(0.82 0.32 180);
-  --chart-2: oklch(0.78 0.35 300);
-  --chart-3: oklch(0.75 0.38 0);
-  --chart-4: oklch(0.85 0.28 60);
-  --chart-5: oklch(0.72 0.42 120);
-  --sidebar: oklch(0.08 0.02 240);
-  --sidebar-foreground: oklch(0.98 0.08 180);
+  --background: oklch(0.12 0.02 85);
+  --foreground: oklch(0.92 0.01 85);
+  --card: oklch(0.15 0.02 85);
+  --card-foreground: oklch(0.92 0.01 85);
+  --popover: oklch(0.15 0.02 85);
+  --popover-foreground: oklch(0.92 0.01 85);
+  --primary: oklch(0.65 0.15 140);
+  --primary-foreground: oklch(0.12 0.02 85);
+  --secondary: oklch(0.18 0.02 85);
+  --secondary-foreground: oklch(0.85 0.01 85);
+  --muted: oklch(0.20 0.02 85);
+  --muted-foreground: oklch(0.65 0.01 85);
+  --accent: oklch(0.75 0.10 60);
+  --accent-foreground: oklch(0.12 0.02 85);
+  --destructive: oklch(0.65 0.18 25);
+  --border: oklch(0.25 0.02 85);
+  --input: oklch(0.18 0.02 85);
+  --ring: oklch(0.65 0.15 140);
+  --chart-1: oklch(0.65 0.15 140);
+  --chart-2: oklch(0.75 0.10 60);
+  --chart-3: oklch(0.65 0.18 25);
+  --chart-4: oklch(0.55 0.10 180);
+  --chart-5: oklch(0.85 0.08 120);
+  --sidebar: oklch(0.15 0.02 85);
+  --sidebar-foreground: oklch(0.92 0.01 85);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
-  --sidebar-accent: oklch(0.78 0.35 300);
-  --sidebar-accent-foreground: oklch(0.05 0.01 240);
-  --sidebar-border: oklch(0.22 0.04 240);
+  --sidebar-accent: oklch(0.75 0.10 60);
+  --sidebar-accent-foreground: oklch(0.12 0.02 85);
+  --sidebar-border: oklch(0.25 0.02 85);
   --sidebar-ring: var(--ring);
 }
 
@@ -124,92 +124,70 @@
   }
 }
 
-/* Cyberpunk Effects */
+/* Natural & Organic Effects */
 @layer utilities {
-  .neon-glow {
-    box-shadow: 0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary));
+  .organic-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
   }
   
-  .neon-text {
-    text-shadow: 0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary));
+  .leaf-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-opacity='0.02'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
   }
   
-  .glitch-effect {
-    position: relative;
-    animation: glitch 2s infinite;
+  .gradient-earth {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
   }
   
-  .glitch-effect::before,
-  .glitch-effect::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
   }
   
-  .glitch-effect::before {
-    animation: glitch-1 0.5s infinite;
-    color: hsl(var(--destructive));
-    z-index: -1;
+  .grow-on-hover {
+    transition: transform 0.3s ease;
   }
   
-  .glitch-effect::after {
-    animation: glitch-2 0.5s infinite;
-    color: hsl(var(--primary));
-    z-index: -2;
+  .grow-on-hover:hover {
+    transform: scale(1.05);
   }
   
-  .cyber-grid {
-    background-image: 
-      linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
+  .nature-blur {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
   }
   
-  .hologram {
-    background: linear-gradient(45deg, transparent 30%, rgba(0, 255, 255, 0.1) 50%, transparent 70%);
-    background-size: 20px 20px;
-    animation: hologram-scan 3s linear infinite;
+  .dark .nature-blur {
+    background: rgba(0, 0, 0, 0.3);
   }
 }
 
-@keyframes glitch {
-  0%, 100% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
-@keyframes glitch-1 {
-  0%, 100% { transform: translate(0); }
-  10% { transform: translate(-2px, -1px); }
-  20% { transform: translate(-1px, 2px); }
-  30% { transform: translate(1px, -1px); }
-  40% { transform: translate(-1px, 1px); }
-  50% { transform: translate(-2px, -1px); }
-  60% { transform: translate(-1px, 2px); }
-  70% { transform: translate(1px, -1px); }
-  80% { transform: translate(-1px, 1px); }
-  90% { transform: translate(1px, 2px); }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes glitch-2 {
-  0%, 100% { transform: translate(0); }
-  10% { transform: translate(2px, 1px); }
-  20% { transform: translate(1px, -2px); }
-  30% { transform: translate(-1px, 1px); }
-  40% { transform: translate(1px, -1px); }
-  50% { transform: translate(2px, 1px); }
-  60% { transform: translate(1px, -2px); }
-  70% { transform: translate(-1px, 1px); }
-  80% { transform: translate(1px, -1px); }
-  90% { transform: translate(-1px, -2px); }
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@keyframes hologram-scan {
-  0% { background-position: -100% 0; }
-  100% { background-position: 100% 0; }
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
 }
