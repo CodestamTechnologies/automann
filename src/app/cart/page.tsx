@@ -2,7 +2,7 @@ import Navbar from "@/components/clothing/Navbar";
 import Footer from "@/components/clothing/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+
 import { Separator } from "@/components/ui/separator";
 import { Trash2, Plus, Minus, ArrowLeft } from "lucide-react";
 import Link from "next/link";

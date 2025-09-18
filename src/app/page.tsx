@@ -1,19 +1,19 @@
-import Navbar from "@/components/clothing/Navbar";
-import Hero from "@/components/clothing/Hero";
-import Categories from "@/components/clothing/Categories";
-import FeaturedProducts from "@/components/clothing/FeaturedProducts";
-import Testimonials from "@/components/clothing/Testimonials";
-import Newsletter from "@/components/clothing/Newsletter";
-import Footer from "@/components/clothing/Footer";
+import Navbar from "@/components/cyberpunk/Navbar";
+import Hero from "@/components/cyberpunk/Hero";
+import FeaturedArt from "@/components/cyberpunk/FeaturedArt";
+import TechShowcase from "@/components/cyberpunk/TechShowcase";
+import ArtistSpotlight from "@/components/cyberpunk/ArtistSpotlight";
+import Newsletter from "@/components/cyberpunk/Newsletter";
+import Footer from "@/components/cyberpunk/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Categories />
-      <FeaturedProducts />
-      <Testimonials />
+      <FeaturedArt />
+      <TechShowcase />
+      <ArtistSpotlight />
       <Newsletter />
       <Footer />
     </div>

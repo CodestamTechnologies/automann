@@ -22,7 +22,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ShoppingCart, Search, User, Heart, Menu } from "lucide-react";
-import { cn } from "@/lib/utils";
+
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

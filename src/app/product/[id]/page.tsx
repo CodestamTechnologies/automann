@@ -3,7 +3,7 @@ import Footer from "@/components/clothing/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Card, CardContent } from "@/components/ui/card";
+
 import { Star, Heart, ShoppingCart, Truck, Shield, RotateCcw } from "lucide-react";
 import Link from "next/link";
 
