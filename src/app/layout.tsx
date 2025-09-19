@@ -10,24 +10,36 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Alpine Luxe - Premium Mountain Adventures &amp; Luxury Travel",
-  description: "Experience the world&apos;s most exclusive mountain destinations with Alpine Luxe. Luxury alpine adventures, helicopter tours, premium expeditions, and unparalleled service in breathtaking mountain settings.",
+  title: "Noctis Observatory &amp; Urban Astronomy Center",
+  description:
+    "Explore the city&apos;s skies at Noctis Observatory — neon-noir astronomy, public stargazing, immersive space education, and hands-on research labs.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
-  keywords: ["luxury travel", "mountain adventures", "alpine expeditions", "helicopter tours", "premium travel", "luxury mountain resorts", "exclusive destinations", "high-end tourism"],
+  keywords: [
+    "astronomy",
+    "observatory",
+    "stargazing",
+    "space education",
+    "urban astronomy",
+    "planetarium",
+    "cosmos",
+    "science center",
+  ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "Alpine Luxe - Premium Mountain Adventures &amp; Luxury Travel",
-    description: "Experience the world&apos;s most exclusive mountain destinations with Alpine Luxe. Luxury alpine adventures, helicopter tours, premium expeditions, and unparalleled service.",
+    title: "Noctis Observatory &amp; Urban Astronomy Center",
+    description:
+      "Neon-noir space experiences, community nights, and citizen-science programs under the city&apos;s stars.",
     url: "https://codestam.com",
-    siteName: "Alpine Luxe",
+    siteName: "Noctis Observatory",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alpine Luxe - Premium Mountain Adventures &amp; Luxury Travel",
-    description: "Experience the world&apos;s most exclusive mountain destinations with Alpine Luxe. Luxury alpine adventures, helicopter tours, premium expeditions, and unparalleled service.",
+    title: "Noctis Observatory &amp; Urban Astronomy Center",
+    description:
+      "Neon-noir space experiences, community nights, and citizen-science programs under the city&apos;s stars.",
   },
 };
 
@@ -38,9 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${josefinSans.className} antialiased`}
-      >
+      <body className={`${josefinSans.className} fontsans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
