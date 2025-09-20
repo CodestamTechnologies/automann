@@ -10,38 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "EcoLife Sustainable Living",
+  title: "Horologium — Curated Vintage Timepieces",
   description:
-    "Discover sustainable living solutions with EcoLife — eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet and lifestyle.",
+    "Explore an exquisite collection of vintage watches, from rare Swiss movements to timeless American classics. Expert authentication, restoration, and acquisition services for serious collectors.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "sustainable living",
-    "eco-friendly products",
-    "green lifestyle",
-    "natural alternatives",
-    "environmental sustainability",
-    "organic products",
-    "zero waste",
-    "renewable energy",
-    "sustainable fashion",
-    "eco-conscious living",
+    "vintage timepieces",
+    "collector watches",
+    "horological masterpieces",
+    "antique timepieces",
+    "swiss movements",
+    "mechanical watches",
+    "watch authentication",
+    "timepiece restoration",
+    "rare watches",
+    "luxury horology",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "EcoLife Sustainable Living",
+    title: "Horologium — Curated Vintage Timepieces",
     description:
-      "Discover sustainable living solutions with eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet.",
+      "Explore an exquisite collection of vintage watches, from rare Swiss movements to timeless American classics. Expert authentication and restoration services.",
     url: "https://codestam.com",
-    siteName: "EcoLife Sustainable Living",
+    siteName: "Horologium",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "EcoLife Sustainable Living",
+    title: "Horologium — Curated Vintage Timepieces",
     description:
-      "Discover sustainable living solutions with eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet.",
+      "Explore an exquisite collection of vintage watches, from rare Swiss movements to timeless American classics. Expert authentication and restoration services.",
   },
 };
 

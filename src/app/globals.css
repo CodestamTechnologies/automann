@@ -43,34 +43,34 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* Modern Professional Palette - Warm & Sophisticated */
+/* Sophisticated Minimalism with Geometric Patterns - Vintage Watch Aesthetic */
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.98 0.005 60); /* warm off-white */
-  --foreground: oklch(0.15 0.02 30); /* deep charcoal */
-  --card: oklch(0.99 0.003 60); /* pure white */
-  --card-foreground: oklch(0.15 0.02 30);
-  --popover: oklch(0.99 0.003 60);
-  --popover-foreground: oklch(0.15 0.02 30);
-  --primary: oklch(0.35 0.08 25); /* rich burgundy */
-  --primary-foreground: oklch(0.98 0.005 60);
-  --secondary: oklch(0.92 0.01 60); /* light warm gray */
-  --secondary-foreground: oklch(0.25 0.02 30);
-  --muted: oklch(0.94 0.008 60);
-  --muted-foreground: oklch(0.45 0.02 30);
-  --accent: oklch(0.50 0.06 45); /* warm gold */
-  --accent-foreground: oklch(0.98 0.005 60);
-  --destructive: oklch(0.55 0.12 15); /* deep red */
-  --border: oklch(0.88 0.01 60);
-  --input: oklch(0.96 0.005 60);
-  --ring: oklch(0.35 0.08 25);
-  --chart-1: oklch(0.35 0.08 25);
-  --chart-2: oklch(0.50 0.06 45);
-  --chart-3: oklch(0.40 0.05 35); /* warm brown */
-  --chart-4: oklch(0.30 0.04 20); /* dark burgundy */
-  --chart-5: oklch(0.45 0.07 40); /* warm copper */
-  --sidebar: oklch(0.99 0.003 60);
-  --sidebar-foreground: oklch(0.15 0.02 30);
+  --background: oklch(0.98 0.005 30); /* warm cream */
+  --foreground: oklch(0.15 0.008 30); /* rich brown */
+  --card: oklch(0.99 0.003 30); /* pure cream */
+  --card-foreground: oklch(0.15 0.008 30);
+  --popover: oklch(0.99 0.003 30);
+  --popover-foreground: oklch(0.15 0.008 30);
+  --primary: oklch(0.15 0.008 30); /* rich brown */
+  --primary-foreground: oklch(0.98 0.005 30);
+  --secondary: oklch(0.92 0.006 30); /* light cream */
+  --secondary-foreground: oklch(0.25 0.010 30);
+  --muted: oklch(0.90 0.005 30);
+  --muted-foreground: oklch(0.50 0.010 30);
+  --accent: oklch(0.45 0.15 25); /* bronze accent */
+  --accent-foreground: oklch(0.98 0.005 30);
+  --destructive: oklch(0.55 0.20 15); /* deep burgundy */
+  --border: oklch(0.88 0.008 30);
+  --input: oklch(0.94 0.005 30);
+  --ring: oklch(0.45 0.15 25);
+  --chart-1: oklch(0.15 0.008 30);
+  --chart-2: oklch(0.45 0.15 25);
+  --chart-3: oklch(0.35 0.010 30); /* medium brown */
+  --chart-4: oklch(0.25 0.010 30); /* dark brown */
+  --chart-5: oklch(0.55 0.12 25); /* light bronze */
+  --sidebar: oklch(0.99 0.003 30);
+  --sidebar-foreground: oklch(0.15 0.008 30);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
@@ -80,31 +80,31 @@
 }
 
 .dark {
-  --background: oklch(0.08 0.01 30); /* deep charcoal */
-  --foreground: oklch(0.95 0.005 60); /* warm white */
-  --card: oklch(0.12 0.01 30); /* dark surface */
-  --card-foreground: oklch(0.95 0.005 60);
-  --popover: oklch(0.12 0.01 30);
-  --popover-foreground: oklch(0.95 0.005 60);
-  --primary: oklch(0.60 0.10 25); /* bright burgundy */
-  --primary-foreground: oklch(0.08 0.01 30);
-  --secondary: oklch(0.18 0.01 30); /* dark gray */
-  --secondary-foreground: oklch(0.90 0.005 60);
-  --muted: oklch(0.16 0.01 30);
-  --muted-foreground: oklch(0.65 0.01 30);
-  --accent: oklch(0.65 0.08 45); /* bright gold */
-  --accent-foreground: oklch(0.08 0.01 30);
-  --destructive: oklch(0.65 0.15 15); /* bright red */
-  --border: oklch(0.22 0.01 30);
-  --input: oklch(0.15 0.01 30);
-  --ring: oklch(0.60 0.10 25);
-  --chart-1: oklch(0.60 0.10 25);
-  --chart-2: oklch(0.65 0.08 45);
-  --chart-3: oklch(0.55 0.07 35); /* bright brown */
-  --chart-4: oklch(0.45 0.06 20); /* bright burgundy */
-  --chart-5: oklch(0.60 0.09 40); /* bright copper */
-  --sidebar: oklch(0.12 0.01 30);
-  --sidebar-foreground: oklch(0.95 0.005 60);
+  --background: oklch(0.10 0.008 30); /* deep brown-black */
+  --foreground: oklch(0.92 0.005 30); /* warm white */
+  --card: oklch(0.15 0.010 30); /* dark brown surface */
+  --card-foreground: oklch(0.92 0.005 30);
+  --popover: oklch(0.15 0.010 30);
+  --popover-foreground: oklch(0.92 0.005 30);
+  --primary: oklch(0.92 0.005 30); /* warm white */
+  --primary-foreground: oklch(0.10 0.008 30);
+  --secondary: oklch(0.20 0.010 30); /* dark brown */
+  --secondary-foreground: oklch(0.88 0.005 30);
+  --muted: oklch(0.18 0.008 30);
+  --muted-foreground: oklch(0.65 0.010 30);
+  --accent: oklch(0.55 0.18 25); /* bright bronze */
+  --accent-foreground: oklch(0.10 0.008 30);
+  --destructive: oklch(0.65 0.22 15); /* bright burgundy */
+  --border: oklch(0.25 0.010 30);
+  --input: oklch(0.18 0.008 30);
+  --ring: oklch(0.55 0.18 25);
+  --chart-1: oklch(0.92 0.005 30);
+  --chart-2: oklch(0.55 0.18 25);
+  --chart-3: oklch(0.70 0.010 30); /* light brown */
+  --chart-4: oklch(0.80 0.008 30); /* lighter brown */
+  --chart-5: oklch(0.65 0.15 25); /* bright bronze */
+  --sidebar: oklch(0.15 0.010 30);
+  --sidebar-foreground: oklch(0.92 0.005 30);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
@@ -118,20 +118,45 @@
   body { @apply bg-background text-foreground font-sans; }
 }
 
-/* Modern professional utility classes */
+/* Sophisticated Minimalism with Geometric Patterns - Vintage Watch Utilities */
 @layer utilities {
-  .professional-glow { box-shadow: 0 0 20px oklch(0.35 0.08 25 / 0.15), 0 0 6px oklch(0.50 0.06 45 / 0.2); }
-  .professional-gradient { background: linear-gradient(135deg, oklch(0.35 0.08 25), oklch(0.50 0.06 45)); }
-  .professional-border { border: 1px solid oklch(0.35 0.08 25 / 0.2); }
-  .elegant-pattern { background-image: radial-gradient(circle at 25% 25%, oklch(0.35 0.08 25 / 0.03) 0%, transparent 50%), radial-gradient(circle at 75% 75%, oklch(0.50 0.06 45 / 0.03) 0%, transparent 50%); }
-  .sophisticated-overlay { background: linear-gradient(45deg, transparent 30%, oklch(0.35 0.08 25 / 0.05) 50%, transparent 70%); }
-  .texture-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.01'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm0 0c0 11.046 8.954 20 20 20s20-8.954 20-20-8.954-20-20-20-20 8.954-20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  .vintage-glow { box-shadow: 0 0 25px oklch(0.45 0.15 25 / 0.15), 0 0 6px oklch(0.45 0.15 25 / 0.25); }
+  .bronze-gradient { background: linear-gradient(135deg, oklch(0.15 0.008 30), oklch(0.45 0.15 25), oklch(0.15 0.008 30)); }
+  .minimal-border { border: 1px solid oklch(0.15 0.008 30); }
+  .bronze-accent { border: 1px solid oklch(0.45 0.15 25); }
+  .geometric-pattern { 
+    background-image: 
+      linear-gradient(30deg, oklch(0.15 0.008 30 / 0.03) 25%, transparent 25%),
+      linear-gradient(-30deg, oklch(0.15 0.008 30 / 0.03) 25%, transparent 25%),
+      linear-gradient(30deg, transparent 75%, oklch(0.15 0.008 30 / 0.03) 75%),
+      linear-gradient(-30deg, transparent 75%, oklch(0.15 0.008 30 / 0.03) 75%);
+    background-size: 24px 24px;
+    background-position: 0 0, 0 12px, 12px -12px, -12px 0px;
+  }
+  .watch-overlay { 
+    background: linear-gradient(120deg, transparent 35%, oklch(0.45 0.15 25 / 0.06) 50%, transparent 65%);
+  }
+  .leather-texture { 
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233D2914' fill-opacity='0.015'%3E%3Cpath d='M30 30c0-8.284-6.716-15-15-15s-15 6.716-15 15 6.716 15 15 15 15-6.716 15-15zm0 0c0 8.284 6.716 15 15 15s15-6.716 15-15-6.716-15-15-15-15 6.716-15 15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+  }
+  .elegant-shadow { box-shadow: 0 6px 25px oklch(0.15 0.008 30 / 0.08), 0 2px 4px oklch(0.15 0.008 30 / 0.15); }
+  .bronze-highlight { background: linear-gradient(90deg, transparent, oklch(0.45 0.15 25 / 0.08), transparent); }
+  .watch-face { 
+    background: radial-gradient(circle at center, oklch(0.99 0.003 30) 0%, oklch(0.95 0.005 30) 100%);
+    border: 2px solid oklch(0.45 0.15 25);
+  }
+  .minimal-card { 
+    background: oklch(0.99 0.003 30);
+    border: 1px solid oklch(0.88 0.008 30);
+    box-shadow: 0 2px 12px oklch(0.15 0.008 30 / 0.05);
+  }
 }
 
-@keyframes professional-pulse { 0%,100%{transform:scale(1); opacity:1} 50%{transform:scale(1.01); opacity:0.95} }
-@keyframes elegant-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
-@keyframes slideInProfessional { from{opacity:0;transform:translateX(-15px)} to{opacity:1;transform:translateX(0)} }
-@keyframes fadeInUp { from{opacity:0;transform:translateY(15px)} to{opacity:1;transform:translateY(0)} }
-@keyframes sophisticated-flow { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
-@keyframes elegant-drift { 0%{transform:translateY(-50vh) rotate(0deg)} 100%{transform:translateY(50vh) rotate(180deg)} }
-@keyframes refined-sway { 0%{transform:rotate(0deg)} 50%{transform:rotate(1deg)} 100%{transform:rotate(0deg)} }
+@keyframes vintage-pulse { 0%,100%{transform:scale(1); opacity:1} 50%{transform:scale(1.01); opacity:0.95} }
+@keyframes geometric-float { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-4px) rotate(0.5deg)} }
+@keyframes slideInMinimal { from{opacity:0;transform:translateX(-15px)} to{opacity:1;transform:translateX(0)} }
+@keyframes fadeInUpElegant { from{opacity:0;transform:translateY(15px)} to{opacity:1;transform:translateY(0)} }
+@keyframes bronze-flow { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+@keyframes watch-tick { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+@keyframes geometric-sway { 0%{transform:rotate(0deg) scale(1)} 50%{transform:rotate(1deg) scale(1.005)} 100%{transform:rotate(0deg) scale(1)} }
+@keyframes vintage-fade { 0%,100%{opacity:0.7} 50%{opacity:1} }

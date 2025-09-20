@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/eco/Navbar";
-import Hero from "@/components/eco/Hero";
-import FeaturedProducts from "@/components/eco/FeaturedProducts";
-import Testimonials from "@/components/eco/Testimonials";
-import Newsletter from "@/components/eco/Newsletter";
-import Footer from "@/components/eco/Footer";
+import Navbar from "@/components/vintage/Navbar";
+import Hero from "@/components/vintage/Hero";
+import FeaturedCollections from "@/components/vintage/FeaturedCollections";
+import Services from "@/components/vintage/Services";
+import Testimonials from "@/components/vintage/Testimonials";
+import Newsletter from "@/components/vintage/Newsletter";
+import Footer from "@/components/vintage/Footer";
 
 export const metadata: Metadata = {
-  title: "EcoLife Sustainable Living — Live Sustainably, Love Naturally",
-  description: "Discover sustainable living solutions with EcoLife — eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet and lifestyle.",
+  title: "Horologium — Curated Vintage Timepieces | Expert Authentication & Restoration",
+  description: "Explore an exquisite collection of vintage watches, from rare Swiss movements to timeless American classics. Expert authentication, restoration, and acquisition services for serious collectors.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
@@ -18,7 +19,8 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <FeaturedProducts />
+      <FeaturedCollections />
+      <Services />
       <Testimonials />
       <Newsletter />
       <Footer />
