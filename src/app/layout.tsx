@@ -10,36 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Noctis Observatory &amp; Urban Astronomy Center",
+  title: "ZenFit Wellness &amp; Holistic Health Center",
   description:
-    "Explore the city&apos;s skies at Noctis Observatory — neon-noir astronomy, public stargazing, immersive space education, and hands-on research labs.",
+    "Discover your path to wellness at ZenFit — holistic fitness, mindful movement, nature-inspired wellness programs, and serene healing spaces.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "astronomy",
-    "observatory",
-    "stargazing",
-    "space education",
-    "urban astronomy",
-    "planetarium",
-    "cosmos",
-    "science center",
+    "wellness",
+    "fitness",
+    "holistic health",
+    "mindful movement",
+    "yoga",
+    "meditation",
+    "nature therapy",
+    "wellness center",
+    "zen fitness",
+    "mindfulness",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "Noctis Observatory &amp; Urban Astronomy Center",
+    title: "ZenFit Wellness &amp; Holistic Health Center",
     description:
-      "Neon-noir space experiences, community nights, and citizen-science programs under the city&apos;s stars.",
+      "Transform your wellness journey with nature-inspired fitness, mindful movement, and holistic healing experiences.",
     url: "https://codestam.com",
-    siteName: "Noctis Observatory",
+    siteName: "ZenFit Wellness",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noctis Observatory &amp; Urban Astronomy Center",
+    title: "ZenFit Wellness &amp; Holistic Health Center",
     description:
-      "Neon-noir space experiences, community nights, and citizen-science programs under the city&apos;s stars.",
+      "Transform your wellness journey with nature-inspired fitness, mindful movement, and holistic healing experiences.",
   },
 };
 

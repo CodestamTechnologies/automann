@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/noctis/Navbar";
-import Hero from "@/components/noctis/Hero";
-import Programs from "@/components/noctis/Programs";
-import Events from "@/components/noctis/Events";
-import Research from "@/components/noctis/Research";
-import Visit from "@/components/noctis/Visit";
-import Footer from "@/components/noctis/Footer";
+import Navbar from "@/components/wellness/Navbar";
+import Hero from "@/components/wellness/Hero";
+import FeaturedPrograms from "@/components/wellness/FeaturedPrograms";
+import Testimonials from "@/components/wellness/Testimonials";
+import Newsletter from "@/components/wellness/Newsletter";
+import Footer from "@/components/wellness/Footer";
 
 export const metadata: Metadata = {
-  title: "Noctis Observatory — Neon-Noir Urban Astronomy",
-  description: "Stargazing, planetarium shows, and citizen-science under the city&apos;s night sky.",
+  title: "ZenFit Wellness — Holistic Health &amp; Mindful Fitness",
+  description: "Transform your wellness journey with nature-inspired fitness, mindful movement, and holistic healing experiences.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
@@ -19,10 +18,9 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Programs />
-      <Events />
-      <Research />
-      <Visit />
+      <FeaturedPrograms />
+      <Testimonials />
+      <Newsletter />
       <Footer />
     </div>
   );
