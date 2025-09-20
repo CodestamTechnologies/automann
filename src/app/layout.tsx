@@ -10,38 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Artisan Creative Studio",
+  title: "GrowthLab Digital",
   description:
-    "Discover exceptional creative arts and design at Artisan Creative Studio — fine art, digital design, photography, and bespoke creative solutions for discerning clients.",
+    "Accelerate your business growth with GrowthLab Digital — cutting-edge digital marketing, growth hacking, and data-driven strategies for modern businesses.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "creative arts",
-    "fine art",
-    "digital design",
-    "photography",
-    "artistic services",
-    "creative studio",
-    "bespoke design",
-    "artistic consultation",
-    "visual arts",
-    "creative solutions",
+    "digital marketing",
+    "growth hacking",
+    "business growth",
+    "marketing automation",
+    "data analytics",
+    "conversion optimization",
+    "lead generation",
+    "social media marketing",
+    "content marketing",
+    "growth strategies",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "Artisan Creative Studio",
+    title: "GrowthLab Digital",
     description:
-      "Elevating creativity through exceptional arts and design services, fine art, and bespoke creative solutions.",
+      "Accelerate your business growth with cutting-edge digital marketing, growth hacking, and data-driven strategies.",
     url: "https://codestam.com",
-    siteName: "Artisan Creative",
+    siteName: "GrowthLab Digital",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Artisan Creative Studio",
+    title: "GrowthLab Digital",
     description:
-      "Elevating creativity through exceptional arts and design services, fine art, and bespoke creative solutions.",
+      "Accelerate your business growth with cutting-edge digital marketing, growth hacking, and data-driven strategies.",
   },
 };
 

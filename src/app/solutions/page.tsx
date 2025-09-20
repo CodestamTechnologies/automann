@@ -1,109 +1,110 @@
-import type { Metadata } from "next";
-import Navbar from "@/components/tech/Navbar";
-import Footer from "@/components/tech/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+"use client";
+
+import { motion } from "framer-motion";
+import Navbar from "@/components/marketing/Navbar";
+import Footer from "@/components/marketing/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Cpu, Shield, Code, Zap, Rocket, ArrowRight, Star } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { TrendingUp, Target, Zap, BarChart3, ArrowRight, Star, Users, Award } from "lucide-react";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Technology Solutions — NexusTech Innovation Hub",
-  description: "Explore our comprehensive suite of cutting-edge technology solutions including AI, quantum computing, cybersecurity, and machine learning platforms.",
-  publisher: "Codestam Technologies",
-  metadataBase: new URL("https://codestam.com"),
+const solutionCategories = {
+  "startups": [
+    {
+      id: 1,
+      title: "Rapid Growth Launch",
+      description: "Complete growth strategy for early-stage startups looking to scale quickly and efficiently.",
+      category: "Growth Strategy",
+      duration: "3-6 months",
+      price: "From $5,000",
+      image: "https://maxm-imggenurl.web.val.run/startup growth strategy rapid scaling early stage business",
+      icon: TrendingUp,
+      features: ["MVP Marketing", "User Acquisition", "Growth Hacking", "Analytics Setup"],
+      results: "300% growth in 6 months"
+    },
+    {
+      id: 2,
+      title: "Product-Market Fit",
+      description: "Data-driven approach to finding and optimizing your product-market fit for sustainable growth.",
+      category: "Strategy",
+      duration: "2-4 months",
+      price: "From $3,500",
+      image: "https://maxm-imggenurl.web.val.run/product market fit startup strategy data driven approach",
+      icon: Target,
+      features: ["Market Research", "User Testing", "Iteration Strategy", "Growth Metrics"],
+      results: "85% user retention"
+    }
+  ],
+  "scale-ups": [
+    {
+      id: 3,
+      title: "Scale-Up Acceleration",
+      description: "Advanced growth strategies for companies ready to scale from startup to enterprise level.",
+      category: "Scaling",
+      duration: "6-12 months",
+      price: "From $8,000",
+      image: "https://maxm-imggenurl.web.val.run/scale up business growth enterprise level scaling strategy",
+      icon: BarChart3,
+      features: ["Team Scaling", "Process Optimization", "Market Expansion", "Revenue Growth"],
+      results: "500% revenue increase"
+    },
+    {
+      id: 4,
+      title: "International Expansion",
+      description: "Strategic approach to expanding your business into new markets and territories.",
+      category: "Expansion",
+      duration: "4-8 months",
+      price: "From $6,000",
+      image: "https://maxm-imggenurl.web.val.run/international business expansion global market strategy",
+      icon: Users,
+      features: ["Market Analysis", "Localization", "Cultural Adaptation", "Growth Strategy"],
+      results: "200% market reach"
+    }
+  ],
+  "enterprises": [
+    {
+      id: 5,
+      title: "Digital Transformation",
+      description: "Comprehensive digital transformation strategy to modernize and optimize enterprise operations.",
+      category: "Transformation",
+      duration: "12-18 months",
+      price: "From $15,000",
+      image: "https://maxm-imggenurl.web.val.run/digital transformation enterprise modernization business optimization",
+      icon: Award,
+      features: ["Process Automation", "Data Integration", "Technology Stack", "Change Management"],
+      results: "40% efficiency gain"
+    },
+    {
+      id: 6,
+      title: "Revenue Optimization",
+      description: "Advanced strategies to optimize revenue streams and maximize profitability across all channels.",
+      category: "Optimization",
+      duration: "6-9 months",
+      price: "From $10,000",
+      image: "https://maxm-imggenurl.web.val.run/revenue optimization enterprise profitability channel strategy",
+      icon: Zap,
+      features: ["Revenue Analysis", "Channel Optimization", "Pricing Strategy", "Performance Tracking"],
+      results: "60% profit increase"
+    }
+  ]
 };
 
-const solutions = [
+const featuredSolutions = [
   {
     id: 1,
-    title: "AI-Powered Analytics Platform",
-    description: "Revolutionary artificial intelligence that transforms data into actionable insights with unprecedented accuracy and speed.",
-    category: "Artificial Intelligence",
-    complexity: "Advanced",
-    performance: "99.9%",
-    users: 50000,
-    image: "https://maxm-imggenurl.web.val.run/artificial intelligence AI analytics data science machine learning futuristic technology",
-    icon: Brain,
-    features: ["Real-time Processing", "Predictive Analytics", "Natural Language", "Auto Learning"],
-    status: "Live",
-    pricing: "Enterprise",
-    deployment: "Cloud & On-Premise"
+    title: "Growth Acceleration Program",
+    description: "Our flagship program that has helped 100+ companies achieve explosive growth.",
+    image: "https://maxm-imggenurl.web.val.run/growth acceleration program business growth flagship strategy",
+    results: "Average 300% growth"
   },
   {
     id: 2,
-    title: "Quantum Computing Suite",
-    description: "Next-generation quantum processors that solve complex problems exponentially faster than classical computers.",
-    category: "Quantum Technology",
-    complexity: "Expert",
-    performance: "1000x Faster",
-    users: 2500,
-    image: "https://maxm-imggenurl.web.val.run/quantum computing quantum processor advanced technology futuristic computing",
-    icon: Cpu,
-    features: ["Quantum Algorithms", "Superposition", "Entanglement", "Error Correction"],
-    status: "Beta",
-    pricing: "Custom",
-    deployment: "Cloud"
-  },
-  {
-    id: 3,
-    title: "Cyber Defense Matrix",
-    description: "Advanced cybersecurity platform with AI-driven threat detection and autonomous response capabilities.",
-    category: "Cybersecurity",
-    complexity: "Enterprise",
-    performance: "99.99%",
-    users: 100000,
-    image: "https://maxm-imggenurl.web.val.run/cybersecurity cyber defense security technology digital protection futuristic",
-    icon: Shield,
-    features: ["Threat Detection", "Auto Response", "Zero Trust", "Compliance"],
-    status: "Live",
-    pricing: "Tiered",
-    deployment: "Hybrid"
-  },
-  {
-    id: 4,
-    title: "Neural Network Platform",
-    description: "Scalable deep learning infrastructure for building and deploying advanced neural network models.",
-    category: "Machine Learning",
-    complexity: "Advanced",
-    performance: "10x Faster",
-    users: 15000,
-    image: "https://maxm-imggenurl.web.val.run/neural network deep learning machine learning AI technology futuristic computing",
-    icon: Code,
-    features: ["Auto Scaling", "Model Training", "Real-time Inference", "MLOps"],
-    status: "Live",
-    pricing: "Usage-based",
-    deployment: "Cloud"
-  },
-  {
-    id: 5,
-    title: "Edge Computing Network",
-    description: "Distributed computing infrastructure that brings processing power closer to data sources for ultra-low latency.",
-    category: "Edge Computing",
-    complexity: "Intermediate",
-    performance: "5ms Latency",
-    users: 75000,
-    image: "https://maxm-imggenurl.web.val.run/edge computing distributed network infrastructure technology futuristic",
-    icon: Zap,
-    features: ["Low Latency", "Distributed Processing", "IoT Integration", "Real-time Analytics"],
-    status: "Live",
-    pricing: "Per Node",
-    deployment: "Edge & Cloud"
-  },
-  {
-    id: 6,
-    title: "Blockchain Infrastructure",
-    description: "Enterprise-grade blockchain platform with smart contracts and decentralized applications support.",
-    category: "Blockchain",
-    complexity: "Advanced",
-    performance: "1000 TPS",
-    users: 30000,
-    image: "https://maxm-imggenurl.web.val.run/blockchain technology cryptocurrency smart contracts decentralized futuristic",
-    icon: Rocket,
-    features: ["Smart Contracts", "DeFi Support", "NFT Platform", "Cross-chain"],
-    status: "Live",
-    pricing: "Transaction-based",
-    deployment: "Distributed"
+    title: "Digital Marketing Mastery",
+    description: "Comprehensive digital marketing solutions that deliver measurable results and ROI.",
+    image: "https://maxm-imggenurl.web.val.run/digital marketing mastery comprehensive solutions ROI results",
+    results: "450% average ROI"
   }
 ];
 
@@ -115,154 +116,207 @@ export default function SolutionsPage() {
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute inset-0 energy-pattern opacity-20" />
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
-            <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2">
+            <Badge className="bg-primary/20 text-primary border-primary/30 px-4 py-2 rounded-full">
               <Star className="w-4 h-4 mr-2" />
-              Technology Solutions
+              Our Solutions
             </Badge>
             <h1 className="text-5xl sm:text-6xl font-bold text-foreground">
-              Revolutionary
-              <span className="block tech-gradient bg-clip-text text-transparent">
-                Technology Solutions
+              Tailored Growth
+              <span className="block dynamic-gradient bg-clip-text text-transparent">
+                Solutions
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Discover our comprehensive suite of cutting-edge technologies that are reshaping industries 
-              and pushing the boundaries of what&apos;s possible in the digital age.
+              Discover our comprehensive suite of growth solutions designed for startups, scale-ups, 
+              and enterprises. Each solution is tailored to your specific business stage and growth objectives.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Solutions Grid */}
-      <section className="py-20">
+      {/* Featured Solutions */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {solutions.map((solution) => (
-              <Card key={solution.id} className="overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-card/80 backdrop-blur-xl border border-primary/10 hover:border-primary/30 group">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={solution.image}
-                    alt={solution.title}
-                    className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-                  
-                  {/* Status Badge */}
-                  <div className="absolute top-4 left-4">
-                    <Badge className={`${
-                      solution.status === 'Live' 
-                        ? 'bg-green-500/20 text-green-400 border-green-500/30' 
-                        : 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
-                    } backdrop-blur-sm`}>
-                      {solution.status}
-                    </Badge>
-                  </div>
-                  
-                  {/* Category Badge */}
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-background/90 text-foreground border-border/50 backdrop-blur-sm">
-                      {solution.category}
-                    </Badge>
-                  </div>
-                  
-                  {/* Icon Overlay */}
-                  <div className="absolute bottom-4 right-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-primary/30">
-                      <solution.icon className="w-6 h-6 text-primary" />
-                    </div>
-                  </div>
-                </div>
-
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                    {solution.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
-                    {solution.description}
-                  </CardDescription>
-                </CardHeader>
-
-                <CardContent className="space-y-6">
-                  {/* Performance Metrics */}
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="text-center p-3 bg-secondary/30 rounded-lg">
-                      <div className="text-lg font-bold text-primary">{solution.performance}</div>
-                      <div className="text-xs text-muted-foreground">Performance</div>
-                    </div>
-                    <div className="text-center p-3 bg-secondary/30 rounded-lg">
-                      <div className="text-lg font-bold text-primary">{solution.users.toLocaleString()}</div>
-                      <div className="text-xs text-muted-foreground">Users</div>
-                    </div>
-                  </div>
-
-                  {/* Features */}
-                  <div className="space-y-3">
-                    <h4 className="font-semibold text-foreground text-sm">Key Features:</h4>
-                    <div className="flex flex-wrap gap-1">
-                      {solution.features.map((feature, idx) => (
-                        <Badge key={idx} variant="secondary" className="text-xs bg-primary/10 text-primary border-primary/20">
-                          {feature}
+          <div className="grid md:grid-cols-2 gap-8">
+            {featuredSolutions.map((solution, index) => (
+              <motion.div
+                key={solution.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10 }}
+              >
+                <Card className="overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-card/80 backdrop-blur-xl border border-primary/20 hover:border-primary/40">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={solution.image}
+                      alt={solution.title}
+                      className="w-full h-64 object-cover hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                    
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">{solution.title}</h3>
+                      <p className="text-muted-foreground mb-3">{solution.description}</p>
+                      <div className="flex items-center justify-between">
+                        <Badge className="bg-primary/20 text-primary border-primary/30">
+                          {solution.results}
                         </Badge>
-                      ))}
+                        <Button size="sm" className="dynamic-gradient hover:dynamic-glow text-primary-foreground border-0 rounded-xl">
+                          Learn More
+                        </Button>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Deployment Info */}
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Complexity:</span>
-                      <span className="text-foreground font-medium">{solution.complexity}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Pricing:</span>
-                      <span className="text-foreground font-medium">{solution.pricing}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Deployment:</span>
-                      <span className="text-foreground font-medium">{solution.deployment}</span>
-                    </div>
-                  </div>
-
-                  {/* Action Button */}
-                  <Button className="w-full tech-gradient hover:tech-glow text-primary-foreground border-0 group font-semibold" asChild>
-                    <Link href={`/solutions/${solution.id}`}>
-                      Explore Solution
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Solutions by Business Stage */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Tabs defaultValue="startups" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-12 bg-secondary/30">
+              <TabsTrigger value="startups" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <TrendingUp className="w-4 h-4 mr-2" />
+                Startups
+              </TabsTrigger>
+              <TabsTrigger value="scale-ups" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <BarChart3 className="w-4 h-4 mr-2" />
+                Scale-ups
+              </TabsTrigger>
+              <TabsTrigger value="enterprises" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <Award className="w-4 h-4 mr-2" />
+                Enterprises
+              </TabsTrigger>
+            </TabsList>
+
+            {Object.entries(solutionCategories).map(([category, solutions]) => (
+              <TabsContent key={category} value={category} className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  {solutions.map((solution) => (
+                    <Card key={solution.id} className="overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-card/80 backdrop-blur-xl border border-primary/20 hover:border-primary/40 group">
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={solution.image}
+                          alt={solution.title}
+                          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                        
+                        {/* Category Badge */}
+                        <div className="absolute top-4 left-4">
+                          <Badge className="bg-background/90 text-foreground border-border/50 backdrop-blur-sm">
+                            {solution.category}
+                          </Badge>
+                        </div>
+                        
+                        {/* Icon Overlay */}
+                        <div className="absolute bottom-4 right-4">
+                          <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/30">
+                            <solution.icon className="w-6 h-6 text-primary" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <CardContent className="p-6">
+                        <div className="space-y-4">
+                          <div>
+                            <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors mb-2">
+                              {solution.title}
+                            </h3>
+                            <p className="text-muted-foreground">
+                              {solution.description}
+                            </p>
+                          </div>
+
+                          {/* Solution Details */}
+                          <div className="grid grid-cols-2 gap-4">
+                            <div className="text-center p-3 bg-secondary/30 rounded-xl">
+                              <div className="text-sm font-bold text-primary">{solution.duration}</div>
+                              <div className="text-xs text-muted-foreground">Duration</div>
+                            </div>
+                            <div className="text-center p-3 bg-secondary/30 rounded-xl">
+                              <div className="text-sm font-bold text-primary">{solution.price}</div>
+                              <div className="text-xs text-muted-foreground">Starting Price</div>
+                            </div>
+                          </div>
+
+                          {/* Results */}
+                          <div className="text-center p-3 bg-accent/10 rounded-xl">
+                            <div className="text-lg font-bold text-accent">{solution.results}</div>
+                            <div className="text-xs text-muted-foreground">Typical Results</div>
+                          </div>
+
+                          {/* Features */}
+                          <div className="space-y-3">
+                            <h4 className="font-semibold text-foreground text-sm">What&apos;s Included:</h4>
+                            <div className="flex flex-wrap gap-1">
+                              {solution.features.map((feature, idx) => (
+                                <Badge key={idx} variant="secondary" className="text-xs bg-primary/10 text-primary border-primary/20">
+                                  {feature}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Action Buttons */}
+                          <div className="flex gap-3">
+                            <Button className="flex-1 dynamic-gradient hover:dynamic-glow text-primary-foreground border-0 group font-semibold rounded-xl" asChild>
+                              <Link href={`/solutions/${solution.id}`}>
+                                Learn More
+                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                              </Link>
+                            </Button>
+                            <Button variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10 rounded-xl" asChild>
+                              <Link href={`/contact?solution=${solution.id}`}>
+                                Get Quote
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+      <section className="py-20 bg-secondary/10 relative overflow-hidden">
+        <div className="absolute inset-0 energy-pattern opacity-20" />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Ready to Transform Your Business?
+            Ready to Find Your Perfect Solution?
           </h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-            Join thousands of organizations that have revolutionized their operations with our 
-            cutting-edge technology solutions.
+            Let&apos;s discuss your business goals and find the perfect growth solution 
+            tailored to your specific needs and objectives.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="tech-gradient hover:tech-glow text-primary-foreground border-0 font-semibold" asChild>
+            <Button size="lg" className="dynamic-gradient hover:dynamic-glow text-primary-foreground border-0 font-semibold rounded-xl" asChild>
               <Link href="/contact">
-                Get Started Today
+                Get Custom Solution
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10" asChild>
-              <Link href="/ai-lab">
-                Schedule Demo
+            <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10 rounded-xl" asChild>
+              <Link href="/case-studies">
+                View Case Studies
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
           </div>

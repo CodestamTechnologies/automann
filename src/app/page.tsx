@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/arts/Navbar";
-import Hero from "@/components/arts/Hero";
-import FeaturedServices from "@/components/arts/FeaturedServices";
-import Testimonials from "@/components/arts/Testimonials";
-import Newsletter from "@/components/arts/Newsletter";
-import Footer from "@/components/arts/Footer";
+import Navbar from "@/components/marketing/Navbar";
+import Hero from "@/components/marketing/Hero";
+import FeaturedServices from "@/components/marketing/FeaturedServices";
+import Testimonials from "@/components/marketing/Testimonials";
+import Newsletter from "@/components/marketing/Newsletter";
+import Footer from "@/components/marketing/Footer";
 
 export const metadata: Metadata = {
-  title: "Artisan Creative Studio — Exceptional Arts &amp; Design Services",
-  description: "Discover exceptional creative arts and design at Artisan Creative Studio — fine art, digital design, photography, and bespoke creative solutions for discerning clients.",
+  title: "GrowthLab Digital — Accelerate Your Business Growth",
+  description: "Accelerate your business growth with GrowthLab Digital — cutting-edge digital marketing, growth hacking, and data-driven strategies for modern businesses.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
