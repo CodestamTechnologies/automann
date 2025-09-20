@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/tech/Navbar";
-import Hero from "@/components/tech/Hero";
-import FeaturedSolutions from "@/components/tech/FeaturedSolutions";
-import Testimonials from "@/components/tech/Testimonials";
-import Newsletter from "@/components/tech/Newsletter";
-import Footer from "@/components/tech/Footer";
+import Navbar from "@/components/arts/Navbar";
+import Hero from "@/components/arts/Hero";
+import FeaturedServices from "@/components/arts/FeaturedServices";
+import Testimonials from "@/components/arts/Testimonials";
+import Newsletter from "@/components/arts/Newsletter";
+import Footer from "@/components/arts/Footer";
 
 export const metadata: Metadata = {
-  title: "NexusTech Innovation Hub — Leading the Future of Technology",
-  description: "Pioneering the future with cutting-edge AI solutions, quantum computing, advanced robotics, and next-generation digital transformation.",
+  title: "Artisan Creative Studio — Exceptional Arts &amp; Design Services",
+  description: "Discover exceptional creative arts and design at Artisan Creative Studio — fine art, digital design, photography, and bespoke creative solutions for discerning clients.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
@@ -18,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <FeaturedSolutions />
+      <FeaturedServices />
       <Testimonials />
       <Newsletter />
       <Footer />

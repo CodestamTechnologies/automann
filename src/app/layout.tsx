@@ -10,38 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NexusTech Innovation Hub",
+  title: "Artisan Creative Studio",
   description:
-    "Leading the future of technology at NexusTech — cutting-edge AI solutions, quantum computing, advanced robotics, and next-generation digital transformation.",
+    "Discover exceptional creative arts and design at Artisan Creative Studio — fine art, digital design, photography, and bespoke creative solutions for discerning clients.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "technology",
-    "innovation",
-    "artificial intelligence",
-    "quantum computing",
-    "robotics",
-    "digital transformation",
-    "tech solutions",
-    "future technology",
-    "AI development",
-    "cyber security",
+    "creative arts",
+    "fine art",
+    "digital design",
+    "photography",
+    "artistic services",
+    "creative studio",
+    "bespoke design",
+    "artistic consultation",
+    "visual arts",
+    "creative solutions",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "NexusTech Innovation Hub",
+    title: "Artisan Creative Studio",
     description:
-      "Pioneering the future with cutting-edge technology solutions, AI innovation, and next-generation digital transformation.",
+      "Elevating creativity through exceptional arts and design services, fine art, and bespoke creative solutions.",
     url: "https://codestam.com",
-    siteName: "NexusTech",
+    siteName: "Artisan Creative",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NexusTech Innovation Hub",
+    title: "Artisan Creative Studio",
     description:
-      "Pioneering the future with cutting-edge technology solutions, AI innovation, and next-generation digital transformation.",
+      "Elevating creativity through exceptional arts and design services, fine art, and bespoke creative solutions.",
   },
 };
 

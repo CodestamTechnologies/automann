@@ -1,86 +1,86 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/tech/Navbar";
-import Footer from "@/components/tech/Footer";
+import Navbar from "@/components/arts/Navbar";
+import Footer from "@/components/arts/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Cpu, Shield, Rocket, ArrowRight, Quote, Star, Users } from "lucide-react";
+import { Palette, Heart, Users, Award, ArrowRight, Quote } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us — NexusTech Innovation Hub",
-  description: "Learn about NexusTech's mission to pioneer the future of technology with cutting-edge AI, quantum computing, and next-generation digital solutions.",
+  title: "About Us — Artisan Creative Studio",
+  description: "Learn about Artisan Creative Studio's mission to elevate creativity through exceptional arts and design services, fine art, and bespoke creative solutions.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Chen",
-    role: "CEO &amp; Co-Founder",
-    bio: "Former Google AI researcher with 15+ years in machine learning and quantum computing. Led breakthrough research in neural network optimization.",
-    image: "https://maxm-imggenurl.web.val.run/professional woman CEO technology executive AI researcher futuristic",
-    expertise: ["AI Research", "Quantum Computing", "Leadership"],
+    name: "Isabella Martinez",
+    role: "Founder &amp; Lead Artist",
+    bio: "Award-winning fine artist with 20+ years of experience in traditional and contemporary art. Isabella founded Artisan Creative Studio with a vision to elevate artistic excellence.",
+    image: "https://maxm-imggenurl.web.val.run/professional woman fine artist founder elegant sophisticated business",
+    expertise: ["Fine Art", "Art Direction", "Leadership"],
+    avatar: "IM"
+  },
+  {
+    name: "James Thompson",
+    role: "Creative Director",
+    bio: "Internationally recognized photographer and creative director with expertise in artistic and commercial photography. James brings innovative vision to every project.",
+    image: "https://maxm-imggenurl.web.val.run/professional man creative director photographer sophisticated business",
+    expertise: ["Photography", "Creative Direction", "Brand Strategy"],
+    avatar: "JT"
+  },
+  {
+    name: "Sophia Chen",
+    role: "Digital Art Director",
+    bio: "Digital design expert with a passion for creating compelling visual experiences. Sophia specializes in brand identity and contemporary digital art.",
+    image: "https://maxm-imggenurl.web.val.run/professional woman digital art director designer sophisticated business",
+    expertise: ["Digital Design", "Brand Identity", "UI/UX"],
     avatar: "SC"
   },
   {
-    name: "Marcus Rodriguez",
-    role: "CTO &amp; Co-Founder",
-    bio: "Ex-Microsoft architect specializing in distributed systems and cybersecurity. Built enterprise-scale platforms serving millions of users.",
-    image: "https://maxm-imggenurl.web.val.run/professional man CTO technology architect cybersecurity expert futuristic",
-    expertise: ["System Architecture", "Cybersecurity", "Cloud Computing"],
+    name: "Michael Rodriguez",
+    role: "Art Consultant",
+    bio: "Art historian and consultant with deep knowledge of contemporary art markets. Michael provides expert guidance on art investment and collection building.",
+    image: "https://maxm-imggenurl.web.val.run/professional man art consultant historian sophisticated business",
+    expertise: ["Art Consultation", "Market Analysis", "Collection Building"],
     avatar: "MR"
-  },
-  {
-    name: "Dr. Emily Watson",
-    role: "Head of AI Research",
-    bio: "Stanford PhD in Computer Science with focus on deep learning and natural language processing. Published 50+ papers in top-tier journals.",
-    image: "https://maxm-imggenurl.web.val.run/professional woman AI researcher computer science deep learning futuristic",
-    expertise: ["Deep Learning", "NLP", "Research"],
-    avatar: "EW"
-  },
-  {
-    name: "Alex Kim",
-    role: "Head of Quantum Computing",
-    bio: "MIT graduate with expertise in quantum algorithms and quantum machine learning. Former IBM Quantum researcher with breakthrough contributions.",
-    image: "https://maxm-imggenurl.web.val.run/professional man quantum computing researcher MIT technology futuristic",
-    expertise: ["Quantum Algorithms", "Quantum ML", "Research"],
-    avatar: "AK"
   }
 ];
 
 const companyValues = [
   {
-    title: "Innovation First",
-    description: "We push the boundaries of what&apos;s possible, constantly exploring new frontiers in technology and science.",
-    icon: Rocket
+    title: "Artistic Excellence",
+    description: "We maintain the highest standards of artistic quality and craftsmanship in every project we undertake.",
+    icon: Palette
   },
   {
-    title: "Excellence in Execution",
-    description: "We deliver world-class solutions that exceed expectations and drive real-world impact for our clients.",
-    icon: Star
+    title: "Creative Innovation",
+    description: "We embrace new techniques and technologies while respecting traditional artistic methods and values.",
+    icon: Heart
   },
   {
-    title: "Collaborative Spirit",
-    description: "We believe the best solutions come from diverse teams working together toward a common vision.",
+    title: "Client Partnership",
+    description: "We work closely with our clients to understand their vision and bring their creative dreams to life.",
     icon: Users
   },
   {
-    title: "Ethical Technology",
-    description: "We develop technology responsibly, ensuring our innovations benefit humanity and protect privacy.",
-    icon: Shield
+    title: "Cultural Impact",
+    description: "We believe in the power of art to inspire, educate, and create positive change in communities.",
+    icon: Award
   }
 ];
 
 const milestones = [
-  { year: "2018", event: "Company Founded", description: "Started with a vision to revolutionize technology" },
-  { year: "2019", event: "First AI Model", description: "Launched our breakthrough neural network platform" },
-  { year: "2020", event: "Quantum Breakthrough", description: "Achieved quantum supremacy in specific algorithms" },
-  { year: "2021", event: "Enterprise Launch", description: "Served our first Fortune 500 clients" },
-  { year: "2022", event: "Global Expansion", description: "Opened offices in 15 countries worldwide" },
-  { year: "2023", event: "AI Revolution", description: "Launched next-generation AI platform" },
-  { year: "2024", event: "Future Vision", description: "Pioneering the next wave of technological innovation" }
+  { year: "2008", event: "Studio Founded", description: "Artisan Creative Studio established with a vision for artistic excellence" },
+  { year: "2010", event: "First Major Commission", description: "Completed first large-scale corporate art installation" },
+  { year: "2012", event: "International Recognition", description: "Received first international art award for innovative design" },
+  { year: "2015", event: "Gallery Partnership", description: "Established partnerships with prestigious art galleries worldwide" },
+  { year: "2018", event: "Digital Expansion", description: "Launched digital art and design services division" },
+  { year: "2020", event: "Virtual Exhibitions", description: "Pioneered virtual art exhibitions during global challenges" },
+  { year: "2024", event: "Future Vision", description: "Continuing to push boundaries of creative expression and artistic innovation" }
 ];
 
 export default function AboutPage() {
@@ -91,24 +91,24 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute inset-0 artistic-pattern opacity-20" />
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
-            <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2">
-              <Cpu className="w-4 h-4 mr-2" />
-              About NexusTech
+            <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2 rounded-full">
+              <Palette className="w-4 h-4 mr-2" />
+              About Artisan Creative
             </Badge>
             <h1 className="text-5xl sm:text-6xl font-bold text-foreground">
-              Pioneering the
-              <span className="block tech-gradient bg-clip-text text-transparent">
-                Future of Technology
+              Elevating Creativity
+              <span className="block elegant-gradient bg-clip-text text-transparent">
+                Through Art
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Founded in 2018, NexusTech has been at the forefront of technological innovation, 
-              developing cutting-edge solutions that are reshaping industries and transforming the way we live and work.
+              Founded in 2008, Artisan Creative Studio has been dedicated to creating exceptional 
+              artistic experiences that inspire, captivate, and transform spaces and lives.
             </p>
           </div>
         </div>
@@ -124,35 +124,36 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  NexusTech was born from a simple yet ambitious vision: to create technology that doesn&apos;t just 
-                  solve today&apos;s problems, but anticipates and shapes tomorrow&apos;s possibilities. Our founders, 
-                  Dr. Sarah Chen and Marcus Rodriguez, met at a quantum computing conference in 2017.
+                  Artisan Creative Studio was born from a simple yet profound belief: that art has the power 
+                  to transform spaces, inspire communities, and touch the human soul. Our founder, Isabella Martinez, 
+                  established the studio with a vision to bridge the gap between traditional artistic craftsmanship 
+                  and contemporary creative expression.
                 </p>
                 <p>
-                  What started as a research project in a small lab has grown into a global innovation hub, 
-                  but our core mission remains unchanged: to push the boundaries of what&apos;s possible and 
-                  create technology that truly serves humanity.
+                  What started as a small studio in the heart of the art district has grown into a comprehensive 
+                  creative hub, but our core mission remains unchanged: to create exceptional artworks that tell 
+                  stories, evoke emotions, and leave lasting impressions.
                 </p>
                 <p>
-                  Today, we&apos;re proud to serve over 1 million users worldwide with a team of 500+ 
-                  brilliant minds who share our passion for innovation and excellence.
+                  Today, we&apos;re proud to serve clients worldwide with a team of 25+ talented artists and 
+                  creative professionals who share our passion for artistic excellence and innovation.
                 </p>
               </div>
-              <Button className="tech-gradient hover:tech-glow text-primary-foreground border-0 font-semibold" asChild>
-                <Link href="/solutions">
-                  Explore Our Solutions
+              <Button className="elegant-gradient hover:elegant-glow text-primary-foreground border-0 font-semibold rounded-full" asChild>
+                <Link href="/portfolio">
+                  View Our Work
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
             </div>
             <div className="relative">
               <img
-                src="https://maxm-imggenurl.web.val.run/nexustech innovation hub technology company futuristic office building"
-                alt="NexusTech Innovation Hub"
-                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl border border-primary/20"
+                src="https://maxm-imggenurl.web.val.run/artisan creative studio art gallery elegant sophisticated workspace"
+                alt="Artisan Creative Studio"
+                className="w-full h-[500px] object-cover rounded-3xl shadow-2xl border border-primary/20"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-3xl" />
             </div>
           </div>
         </div>
@@ -160,17 +161,17 @@ export default function AboutPage() {
 
       {/* Company Values */}
       <section className="py-20 bg-secondary/10 relative overflow-hidden">
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute inset-0 artistic-pattern opacity-20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Our Core
-              <span className="block tech-gradient bg-clip-text text-transparent">
+              <span className="block elegant-gradient bg-clip-text text-transparent">
                 Values
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              These principles guide everything we do and shape the culture that drives our innovation.
+              These principles guide everything we do and shape the culture that drives our creative excellence.
             </p>
           </div>
 
@@ -178,7 +179,7 @@ export default function AboutPage() {
             {companyValues.map((value, index) => (
               <Card key={index} className="text-center border-0 shadow-xl bg-card/80 backdrop-blur-xl border border-primary/10">
                 <CardContent className="p-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <value.icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">
@@ -200,12 +201,13 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Meet Our
-              <span className="block tech-gradient bg-clip-text text-transparent">
-                Leadership Team
+              <span className="block elegant-gradient bg-clip-text text-transparent">
+                Creative Team
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The brilliant minds behind our technological breakthroughs and company vision.
+              The talented artists and creative professionals behind our exceptional 
+              artistic achievements and client success stories.
             </p>
           </div>
 
@@ -246,17 +248,17 @@ export default function AboutPage() {
 
       {/* Company Timeline */}
       <section className="py-20 bg-secondary/10 relative overflow-hidden">
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute inset-0 artistic-pattern opacity-20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              Our Journey
-              <span className="block tech-gradient bg-clip-text text-transparent">
-                Through Innovation
+              Our Creative
+              <span className="block elegant-gradient bg-clip-text text-transparent">
+                Journey
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Key milestones in our mission to revolutionize technology and shape the future.
+              Key milestones in our mission to elevate creativity and artistic excellence.
             </p>
           </div>
 
@@ -287,21 +289,21 @@ export default function AboutPage() {
 
       {/* Testimonial */}
       <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
-        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute inset-0 artistic-pattern opacity-20" />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <Quote className="w-16 h-16 text-primary/60 mx-auto mb-8" />
           <blockquote className="text-2xl text-muted-foreground italic mb-8 leading-relaxed">
-            &ldquo;NexusTech isn&apos;t just a technology company—it&apos;s a force for positive change. 
-            Their innovations have transformed our industry and opened up possibilities we never knew existed.&rdquo;
+            &ldquo;Artisan Creative Studio doesn&apos;t just create art—they create experiences that transform 
+            spaces and inspire everyone who encounters their work. Their artistic vision is truly exceptional.&rdquo;
           </blockquote>
           <div className="flex items-center justify-center space-x-4">
             <Avatar className="w-16 h-16">
-              <AvatarImage src="https://maxm-imggenurl.web.val.run/professional man technology executive business leader testimonial" alt="Client testimonial" />
-              <AvatarFallback className="bg-primary/10 text-primary font-semibold text-lg">JD</AvatarFallback>
+              <AvatarImage src="https://maxm-imggenurl.web.val.run/professional woman art collector gallery owner testimonial" alt="Client testimonial" />
+              <AvatarFallback className="bg-primary/10 text-primary font-semibold text-lg">AC</AvatarFallback>
             </Avatar>
             <div className="text-left">
-              <div className="font-semibold text-foreground text-lg">John Davis</div>
-              <div className="text-muted-foreground">CEO, TechCorp Global</div>
+              <div className="font-semibold text-foreground text-lg">Anna Collins</div>
+              <div className="text-muted-foreground">Gallery Director, Modern Art Museum</div>
             </div>
           </div>
         </div>
@@ -311,21 +313,21 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Join the Future of Technology
+            Join Our Creative Community
           </h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-            Ready to be part of the next technological revolution? 
-            Explore our solutions or join our team of innovators.
+            Ready to experience the transformative power of exceptional art? 
+            Let&apos;s create something beautiful together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="tech-gradient hover:tech-glow text-primary-foreground border-0 font-semibold" asChild>
-              <Link href="/solutions">
-                Explore Solutions
+            <Button size="lg" className="elegant-gradient hover:elegant-glow text-primary-foreground border-0 font-semibold rounded-full" asChild>
+              <Link href="/contact">
+                Start Your Project
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10" asChild>
-              <Link href="/careers">
-                Join Our Team
+            <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10 rounded-full" asChild>
+              <Link href="/gallery">
+                Explore Our Gallery
               </Link>
             </Button>
           </div>
