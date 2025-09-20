@@ -10,38 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "GrowthLab Digital",
+  title: "EcoLife Sustainable Living",
   description:
-    "Accelerate your business growth with GrowthLab Digital — cutting-edge digital marketing, growth hacking, and data-driven strategies for modern businesses.",
+    "Discover sustainable living solutions with EcoLife — eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet and lifestyle.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "digital marketing",
-    "growth hacking",
-    "business growth",
-    "marketing automation",
-    "data analytics",
-    "conversion optimization",
-    "lead generation",
-    "social media marketing",
-    "content marketing",
-    "growth strategies",
+    "sustainable living",
+    "eco-friendly products",
+    "green lifestyle",
+    "natural alternatives",
+    "environmental sustainability",
+    "organic products",
+    "zero waste",
+    "renewable energy",
+    "sustainable fashion",
+    "eco-conscious living",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "GrowthLab Digital",
+    title: "EcoLife Sustainable Living",
     description:
-      "Accelerate your business growth with cutting-edge digital marketing, growth hacking, and data-driven strategies.",
+      "Discover sustainable living solutions with eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet.",
     url: "https://codestam.com",
-    siteName: "GrowthLab Digital",
+    siteName: "EcoLife Sustainable Living",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GrowthLab Digital",
+    title: "EcoLife Sustainable Living",
     description:
-      "Accelerate your business growth with cutting-edge digital marketing, growth hacking, and data-driven strategies.",
+      "Discover sustainable living solutions with eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet.",
   },
 };
 

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/marketing/Navbar";
-import Hero from "@/components/marketing/Hero";
-import FeaturedServices from "@/components/marketing/FeaturedServices";
-import Testimonials from "@/components/marketing/Testimonials";
-import Newsletter from "@/components/marketing/Newsletter";
-import Footer from "@/components/marketing/Footer";
+import Navbar from "@/components/eco/Navbar";
+import Hero from "@/components/eco/Hero";
+import FeaturedProducts from "@/components/eco/FeaturedProducts";
+import Testimonials from "@/components/eco/Testimonials";
+import Newsletter from "@/components/eco/Newsletter";
+import Footer from "@/components/eco/Footer";
 
 export const metadata: Metadata = {
-  title: "GrowthLab Digital — Accelerate Your Business Growth",
-  description: "Accelerate your business growth with GrowthLab Digital — cutting-edge digital marketing, growth hacking, and data-driven strategies for modern businesses.",
+  title: "EcoLife Sustainable Living — Live Sustainably, Love Naturally",
+  description: "Discover sustainable living solutions with EcoLife — eco-friendly products, green lifestyle tips, and natural alternatives for a healthier planet and lifestyle.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
@@ -18,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <FeaturedServices />
+      <FeaturedProducts />
       <Testimonials />
       <Newsletter />
       <Footer />

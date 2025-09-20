@@ -1,237 +1,217 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Heart, ShoppingCart, Leaf } from "lucide-react";
-import { useState } from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Leaf, Heart, ShoppingBag, ArrowRight, Star } from "lucide-react";
+import Link from "next/link";
 
-const FeaturedProducts = () => {
-  const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
+const products = [
+  {
+    id: 1,
+    title: "Organic Bamboo Kitchen Set",
+    description: "Complete set of bamboo kitchen utensils made from sustainably sourced bamboo. Perfect for eco-conscious cooking.",
+    category: "Home & Garden",
+    price: "$89.99",
+    originalPrice: "$120.00",
+    image: "https://maxm-imggenurl.web.val.run/organic bamboo kitchen utensils set sustainable eco friendly cooking tools",
+    icon: Leaf,
+    features: ["100% Bamboo", "BPA-Free", "Dishwasher Safe", "Biodegradable"],
+    status: "Best Seller",
+    rating: 4.9,
+    reviews: 124
+  },
+  {
+    id: 2,
+    title: "Natural Skincare Bundle",
+    description: "Complete natural skincare routine with organic ingredients. Gentle on skin and the environment.",
+    category: "Personal Care",
+    price: "$65.99",
+    originalPrice: "$85.00",
+    image: "https://maxm-imggenurl.web.val.run/natural organic skincare products bundle eco friendly beauty routine",
+    icon: Heart,
+    features: ["Organic Ingredients", "Cruelty-Free", "Vegan", "Zero Waste"],
+    status: "New",
+    rating: 4.8,
+    reviews: 89
+  },
+  {
+    id: 3,
+    title: "Eco-Friendly Water Bottle",
+    description: "Stainless steel water bottle with natural cork finish. Keeps drinks cold for 24 hours, hot for 12 hours.",
+    category: "Lifestyle",
+    price: "$34.99",
+    originalPrice: "$45.00",
+    image: "https://maxm-imggenurl.web.val.run/eco friendly stainless steel water bottle natural cork finish sustainable",
+    icon: Leaf,
+    features: ["Stainless Steel", "Cork Finish", "Leak-Proof", "Lifetime Warranty"],
+    status: "Popular",
+    rating: 4.7,
+    reviews: 203
+  },
+  {
+    id: 4,
+    title: "Sustainable Fashion Tote",
+    description: "Handwoven tote bag made from recycled materials. Perfect for shopping, beach trips, or daily use.",
+    category: "Fashion & Textiles",
+    price: "$28.99",
+    originalPrice: "$38.00",
+    image: "https://maxm-imggenurl.web.val.run/sustainable fashion tote bag handwoven recycled materials eco friendly",
+    icon: Heart,
+    features: ["Recycled Materials", "Handwoven", "Machine Washable", "Fair Trade"],
+    status: "Limited",
+    rating: 4.6,
+    reviews: 156
+  }
+];
 
-  const products = [
-    {
-      id: 1,
-      name: "Bamboo Fiber Yoga Mat",
-      price: 89,
-      originalPrice: 120,
-      rating: 4.8,
-      reviews: 234,
-      image: "https://maxm-imggenurl.web.val.run/premium bamboo yoga mat on wooden floor, natural lighting, eco-friendly fitness equipment, sustainable materials, zen atmosphere",
-      badge: "Best Seller",
-      description: "Made from 100% organic bamboo fiber with natural rubber base"
-    },
-    {
-      id: 2,
-      name: "Organic Cotton Tote Bag Set",
-      price: 45,
-      originalPrice: 65,
-      rating: 4.9,
-      reviews: 189,
-      image: "https://maxm-imggenurl.web.val.run/set of organic cotton tote bags in natural colors, reusable shopping bags, eco-friendly lifestyle, sustainable fashion",
-      badge: "Eco Choice",
-      description: "Set of 3 reusable bags made from certified organic cotton"
-    },
-    {
-      id: 3,
-      name: "Stainless Steel Water Bottle",
-      price: 32,
-      originalPrice: 45,
-      rating: 4.7,
-      reviews: 456,
-      image: "https://maxm-imggenurl.web.val.run/sleek stainless steel water bottle with bamboo cap, outdoor setting, sustainable hydration, eco-friendly design",
-      badge: "Popular",
-      description: "Double-walled insulation with bamboo cap and leak-proof design"
-    },
-    {
-      id: 4,
-      name: "Natural Skincare Gift Set",
-      price: 78,
-      originalPrice: 95,
-      rating: 4.9,
-      reviews: 312,
-      image: "https://maxm-imggenurl.web.val.run/luxury natural skincare products gift set, organic cosmetics, botanical ingredients, spa-like presentation",
-      badge: "New",
-      description: "Complete skincare routine with organic botanical ingredients"
-    }
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6
-      }
-    }
-  };
-
+export default function FeaturedProducts() {
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+    <section className="py-24 bg-secondary/10 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 organic-pattern opacity-30" />
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <Leaf className="h-4 w-4" />
-            <span>Featured Collection</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Sustainable Essentials
+          <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 px-4 py-2 rounded-full">
+            <Star className="w-4 h-4 mr-2" />
+            Featured Products
+          </Badge>
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+            Discover Our
+            <span className="block natural-gradient bg-clip-text text-transparent">
+              Eco-Friendly Collection
+            </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our handpicked selection of eco-friendly products that make sustainable living effortless and beautiful.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Handpicked sustainable products that help you live more consciously while reducing 
+            your environmental impact. Every purchase supports a healthier planet.
           </p>
         </motion.div>
 
-        {/* Products Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
-          {products.map((product) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {products.map((product, index) => (
             <motion.div
               key={product.id}
-              variants={itemVariants}
-              onHoverStart={() => setHoveredProduct(product.id)}
-              onHoverEnd={() => setHoveredProduct(null)}
-              className="group relative bg-card rounded-2xl overflow-hidden organic-shadow hover:shadow-lg transition-all duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+              className="group"
             >
-              {/* Badge */}
-              <div className="absolute top-4 left-4 z-10">
-                <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                  {product.badge}
-                </span>
-              </div>
-
-              {/* Wishlist Button */}
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="absolute top-4 right-4 z-10 p-2 bg-background/80 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200"
-              >
-                <Heart className="h-4 w-4 text-muted-foreground hover:text-red-500" />
-              </motion.button>
-
-              {/* Product Image */}
-              <div className="relative h-64 overflow-hidden">
-                <motion.img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  whileHover={{ scale: 1.05 }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-
-              {/* Product Info */}
-              <div className="p-6">
-                <div className="flex items-center space-x-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`h-4 w-4 ${
-                        i < Math.floor(product.rating)
-                          ? "text-yellow-400 fill-current"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  ))}
-                  <span className="text-sm text-muted-foreground ml-2">
-                    ({product.reviews})
-                  </span>
+              <Card className="h-full overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 bg-card/80 backdrop-blur-xl border border-primary/20 hover:border-primary/40">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                  
+                  {/* Status Badge */}
+                  <div className="absolute top-4 left-4">
+                    <Badge className={`${
+                      product.status === 'Best Seller' ? 'bg-green-500/20 text-green-600 border-green-500/30' :
+                      product.status === 'New' ? 'bg-blue-500/20 text-blue-600 border-blue-500/30' :
+                      product.status === 'Popular' ? 'bg-orange-500/20 text-orange-600 border-orange-500/30' :
+                      'bg-purple-500/20 text-purple-600 border-purple-500/30'
+                    } backdrop-blur-sm`}>
+                      {product.status}
+                    </Badge>
+                  </div>
+                  
+                  {/* Category Badge */}
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-background/90 text-foreground border-border/50 backdrop-blur-sm">
+                      {product.category}
+                    </Badge>
+                  </div>
+                  
+                  {/* Icon Overlay */}
+                  <div className="absolute bottom-4 right-4">
+                    <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/30">
+                      <product.icon className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
                 </div>
 
-                <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {product.name}
-                </h3>
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    {product.title}
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground leading-relaxed">
+                    {product.description}
+                  </CardDescription>
+                </CardHeader>
 
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                  {product.description}
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-lg font-bold text-primary">
-                      ${product.price}
-                    </span>
-                    <span className="text-sm text-muted-foreground line-through">
-                      ${product.originalPrice}
-                    </span>
+                <CardContent className="space-y-6">
+                  {/* Price */}
+                  <div className="flex items-center space-x-3">
+                    <span className="text-2xl font-bold text-primary">{product.price}</span>
+                    <span className="text-lg text-muted-foreground line-through">{product.originalPrice}</span>
                   </div>
 
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="p-2 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
-                  >
-                    <ShoppingCart className="h-4 w-4" />
-                  </motion.button>
-                </div>
-              </div>
+                  {/* Rating */}
+                  <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className={`w-4 h-4 ${i < Math.floor(product.rating) ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}`} />
+                      ))}
+                    </div>
+                    <span className="text-sm text-muted-foreground">({product.reviews} reviews)</span>
+                  </div>
 
-              {/* Hover Overlay */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{
-                  opacity: hoveredProduct === product.id ? 1 : 0,
-                  y: hoveredProduct === product.id ? 0 : 20
-                }}
-                className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-background via-background/95 to-transparent"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors"
-                >
-                  Add to Cart
-                </motion.button>
-              </motion.div>
+                  {/* Features */}
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-foreground text-sm">Key Features:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {product.features.map((feature, idx) => (
+                        <Badge key={idx} variant="secondary" className="text-xs bg-primary/10 text-primary border-primary/20">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Button */}
+                  <Button className="w-full natural-gradient hover:natural-glow text-primary-foreground border-0 group font-semibold rounded-xl" asChild>
+                    <Link href={`/products/${product.id}`}>
+                      <ShoppingBag className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
+                      Add to Cart
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
-        {/* View All Button */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="text-center mt-12"
+          className="text-center mt-16"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center space-x-2 border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200"
-          >
-            <span>View All Products</span>
-            <motion.div
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            >
-              →
-            </motion.div>
-          </motion.button>
+          <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10 group rounded-xl" asChild>
+            <Link href="/products">
+              View All Products
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </Button>
         </motion.div>
       </div>
     </section>
   );
-};
-
-export default FeaturedProducts;
+}

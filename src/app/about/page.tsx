@@ -1,85 +1,88 @@
-import type { Metadata } from "next";
-import Navbar from "@/components/marketing/Navbar";
-import Footer from "@/components/marketing/Footer";
+"use client";
+
+import { motion } from "framer-motion";
+import Navbar from "@/components/eco/Navbar";
+import Footer from "@/components/eco/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { TrendingUp, Target, Users, ArrowRight, Quote, Zap } from "lucide-react";
+import { Leaf, Heart, Users, ArrowRight, Quote, Award, Target, Globe } from "lucide-react";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "About Us — GrowthLab Digital",
-  description: "Learn about GrowthLab Digital's mission to accelerate business growth through cutting-edge digital marketing, growth hacking, and data-driven strategies.",
-  publisher: "Codestam Technologies",
-  metadataBase: new URL("https://codestam.com"),
-};
+// Metadata is handled in layout.tsx for client components
 
 const teamMembers = [
   {
-    name: "Sarah Chen",
-    role: "CEO &amp; Growth Strategist",
-    bio: "Serial entrepreneur with 10+ years of experience in scaling startups and driving explosive growth through data-driven strategies.",
-    image: "https://maxm-imggenurl.web.val.run/professional woman CEO growth strategist entrepreneur business leader",
-    expertise: ["Growth Strategy", "Leadership", "Startup Scaling"],
-    avatar: "SC"
+    name: "Sarah Green",
+    role: "Founder &amp; CEO",
+    bio: "Environmental scientist with 15+ years of experience in sustainability and eco-friendly product development.",
+    image: "https://maxm-imggenurl.web.val.run/professional woman environmental scientist sustainability expert eco friendly",
+    expertise: ["Sustainability", "Environmental Science", "Leadership"],
+    avatar: "SG"
   },
   {
-    name: "Michael Rodriguez",
-    role: "CTO &amp; Data Analytics Lead",
-    bio: "Data science expert with deep expertise in marketing analytics, automation, and building scalable growth systems.",
-    image: "https://maxm-imggenurl.web.val.run/professional man CTO data analytics lead technology expert",
-    expertise: ["Data Analytics", "Marketing Automation", "Technology"],
-    avatar: "MR"
+    name: "Michael Earth",
+    role: "Head of Product Development",
+    bio: "Product designer specializing in sustainable materials and circular economy principles.",
+    image: "https://maxm-imggenurl.web.val.run/professional man product designer sustainable materials eco friendly",
+    expertise: ["Product Design", "Sustainable Materials", "Circular Economy"],
+    avatar: "ME"
   },
   {
-    name: "Emily Johnson",
-    role: "Head of Digital Marketing",
-    bio: "Digital marketing veteran with 8+ years of experience in driving high-converting campaigns across all channels.",
-    image: "https://maxm-imggenurl.web.val.run/professional woman head digital marketing expert campaign strategist",
-    expertise: ["Digital Marketing", "Campaign Strategy", "Conversion Optimization"],
-    avatar: "EJ"
+    name: "Emma Nature",
+    role: "Community Manager",
+    bio: "Passionate about building communities and educating people about sustainable living practices.",
+    image: "https://maxm-imggenurl.web.val.run/professional woman community manager sustainable living education",
+    expertise: ["Community Building", "Education", "Sustainability"],
+    avatar: "EN"
   },
   {
-    name: "David Park",
-    role: "Growth Hacking Specialist",
-    bio: "Growth hacking expert who has helped 50+ companies achieve rapid growth through innovative marketing techniques.",
-    image: "https://maxm-imggenurl.web.val.run/professional man growth hacking specialist marketing expert",
-    expertise: ["Growth Hacking", "Viral Marketing", "User Acquisition"],
-    avatar: "DP"
+    name: "David Forest",
+    role: "Sustainability Director",
+    bio: "Environmental consultant with expertise in carbon footprint reduction and sustainable business practices.",
+    image: "https://maxm-imggenurl.web.val.run/professional man environmental consultant sustainability director eco business",
+    expertise: ["Environmental Consulting", "Carbon Reduction", "Business Strategy"],
+    avatar: "DF"
   }
 ];
 
 const companyValues = [
   {
-    title: "Data-Driven Growth",
-    description: "We make every decision based on data and analytics to ensure maximum ROI and sustainable growth.",
-    icon: TrendingUp
+    title: "Environmental Responsibility",
+    description: "We are committed to minimizing our environmental impact and promoting sustainable practices in everything we do.",
+    icon: Leaf
   },
   {
-    title: "Innovation First",
-    description: "We stay ahead of the curve by embracing new technologies and cutting-edge marketing strategies.",
-    icon: Zap
+    title: "Community First",
+    description: "We believe in building strong communities that support and inspire each other on their sustainable living journey.",
+    icon: Heart
   },
   {
-    title: "Client Success",
-    description: "Our success is measured by the success of our clients. We&apos;re committed to delivering exceptional results.",
-    icon: Target
+    title: "Quality &amp; Innovation",
+    description: "We continuously innovate to provide high-quality, eco-friendly products that meet the needs of conscious consumers.",
+    icon: Award
   },
   {
     title: "Transparency",
-    description: "We believe in complete transparency in our processes, reporting, and communication with clients.",
-    icon: Users
+    description: "We maintain complete transparency in our sourcing, manufacturing, and business practices.",
+    icon: Target
   }
 ];
 
 const milestones = [
-  { year: "2019", event: "Company Founded", description: "GrowthLab Digital established with a vision to accelerate business growth" },
-  { year: "2020", event: "First Major Client", description: "Secured first enterprise client and achieved 200% growth for their business" },
-  { year: "2021", event: "Team Expansion", description: "Grew team to 15+ experts and expanded service offerings" },
-  { year: "2022", event: "Industry Recognition", description: "Received multiple awards for outstanding growth marketing results" },
-  { year: "2023", event: "Global Expansion", description: "Expanded services to international markets and remote teams" },
-  { year: "2024", event: "Future Vision", description: "Continuing to push boundaries of growth marketing and digital innovation" }
+  { year: "2020", event: "Company Founded", description: "EcoLife was established with a vision to make sustainable living accessible to everyone" },
+  { year: "2021", event: "First Product Launch", description: "Launched our first line of eco-friendly home products with 100% sustainable materials" },
+  { year: "2022", event: "Community Platform", description: "Built our online community platform connecting 10,000+ eco-conscious individuals" },
+  { year: "2023", event: "Carbon Neutral", description: "Achieved carbon neutrality across all operations and supply chain" },
+  { year: "2024", event: "Global Expansion", description: "Expanded to serve customers in 25+ countries with local sustainable partnerships" }
+];
+
+const impactStats = [
+  { icon: Leaf, value: "50,000+", label: "Trees Planted" },
+  { icon: Heart, value: "100,000+", label: "Plastic Bottles Saved" },
+  { icon: Users, value: "25,000+", label: "Community Members" },
+  { icon: Globe, value: "25+", label: "Countries Served" }
 ];
 
 export default function AboutPage() {
@@ -90,24 +93,24 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 energy-pattern opacity-20" />
+        <div className="absolute inset-0 organic-pattern opacity-20" />
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
             <Badge className="bg-primary/20 text-primary border-primary/30 px-4 py-2 rounded-full">
-              <TrendingUp className="w-4 h-4 mr-2" />
-              About GrowthLab Digital
+              <Leaf className="w-4 h-4 mr-2" />
+              About EcoLife
             </Badge>
             <h1 className="text-5xl sm:text-6xl font-bold text-foreground">
-              Accelerating Growth
-              <span className="block dynamic-gradient bg-clip-text text-transparent">
-                Through Innovation
+              Our Mission for
+              <span className="block natural-gradient bg-clip-text text-transparent">
+                a Sustainable Future
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Founded in 2019, GrowthLab Digital has been at the forefront of digital marketing innovation, 
-              helping businesses achieve explosive growth through data-driven strategies and cutting-edge technology.
+              Founded in 2020, EcoLife is dedicated to making sustainable living accessible, 
+              affordable, and enjoyable for everyone. We believe that small changes can create big impacts.
             </p>
           </div>
         </div>
@@ -123,32 +126,32 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  GrowthLab Digital was born from a simple yet powerful belief: that every business has the potential 
-                  for explosive growth when equipped with the right strategies, tools, and expertise. Our founder, 
-                  Sarah Chen, established the company after successfully scaling multiple startups and recognizing 
-                  the need for specialized growth marketing services.
+                  EcoLife was born from a simple observation: sustainable living shouldn&apos;t be a luxury. 
+                  Our founder, Sarah Green, started the company after struggling to find affordable, 
+                  high-quality eco-friendly products for her own family.
                 </p>
                 <p>
-                  What started as a small team of growth enthusiasts has evolved into a comprehensive digital 
-                  marketing agency serving clients worldwide. We&apos;ve helped over 100 companies achieve 
-                  an average of 300% growth through our innovative approaches and data-driven methodologies.
+                  What began as a small online store has grown into a comprehensive platform that serves 
+                  over 25,000 community members worldwide. We&apos;ve helped thousands of families reduce 
+                  their environmental footprint while saving money and living healthier lives.
                 </p>
                 <p>
-                  Today, we&apos;re proud to be a trusted partner for startups, scale-ups, and enterprises 
-                  looking to accelerate their growth and maximize their marketing ROI.
+                  Today, we&apos;re proud to be a trusted partner for anyone looking to embrace a more 
+                  sustainable lifestyle, offering everything from eco-friendly products to educational 
+                  resources and community support.
                 </p>
               </div>
-              <Button className="dynamic-gradient hover:dynamic-glow text-primary-foreground border-0 font-semibold rounded-xl" asChild>
-                <Link href="/case-studies">
-                  View Our Success Stories
+              <Button className="natural-gradient hover:natural-glow text-primary-foreground border-0 font-semibold rounded-xl" asChild>
+                <Link href="/community">
+                  Join Our Community
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
             </div>
             <div className="relative">
               <img
-                src="https://maxm-imggenurl.web.val.run/growth lab digital marketing agency team workspace modern office"
-                alt="GrowthLab Digital Team"
+                src="https://maxm-imggenurl.web.val.run/ecolife sustainable living company team workspace eco friendly office"
+                alt="EcoLife Team"
                 className="w-full h-[500px] object-cover rounded-3xl shadow-2xl border border-primary/30"
                 loading="lazy"
               />
@@ -160,17 +163,18 @@ export default function AboutPage() {
 
       {/* Company Values */}
       <section className="py-20 bg-secondary/10 relative overflow-hidden">
-        <div className="absolute inset-0 energy-pattern opacity-20" />
+        <div className="absolute inset-0 organic-pattern opacity-20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Our Core
-              <span className="block dynamic-gradient bg-clip-text text-transparent">
+              <span className="block natural-gradient bg-clip-text text-transparent">
                 Values
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              These principles guide everything we do and shape the culture that drives our exceptional results.
+              These principles guide everything we do and shape the culture that drives our mission 
+              to create a more sustainable world.
             </p>
           </div>
 
@@ -200,12 +204,13 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Meet Our
-              <span className="block dynamic-gradient bg-clip-text text-transparent">
-                Growth Experts
+              <span className="block natural-gradient bg-clip-text text-transparent">
+                Leadership Team
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The talented professionals behind our exceptional growth results and client success stories.
+              The passionate individuals behind EcoLife&apos;s mission to make sustainable living 
+              accessible and enjoyable for everyone.
             </p>
           </div>
 
@@ -244,19 +249,55 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Company Timeline */}
+      {/* Impact Stats */}
       <section className="py-20 bg-secondary/10 relative overflow-hidden">
-        <div className="absolute inset-0 energy-pattern opacity-20" />
+        <div className="absolute inset-0 organic-pattern opacity-20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              Our Growth
-              <span className="block dynamic-gradient bg-clip-text text-transparent">
-                Journey
+              Our Environmental
+              <span className="block natural-gradient bg-clip-text text-transparent">
+                Impact
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Key milestones in our mission to accelerate business growth and digital marketing innovation.
+              Numbers that reflect our commitment to environmental responsibility and positive change.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {impactStats.map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center group"
+              >
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:natural-glow transition-all duration-300">
+                  <stat.icon className="w-8 h-8 text-primary" />
+                </div>
+                <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Company Timeline */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-6">
+              Our Journey
+              <span className="block natural-gradient bg-clip-text text-transparent">
+                Through the Years
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Key milestones in our mission to make sustainable living accessible and mainstream.
             </p>
           </div>
 
@@ -287,21 +328,21 @@ export default function AboutPage() {
 
       {/* Testimonial */}
       <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
-        <div className="absolute inset-0 energy-pattern opacity-20" />
+        <div className="absolute inset-0 organic-pattern opacity-20" />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <Quote className="w-16 h-16 text-primary/60 mx-auto mb-8" />
           <blockquote className="text-2xl text-muted-foreground italic mb-8 leading-relaxed">
-            &ldquo;GrowthLab Digital doesn&apos;t just provide marketing services—they become your growth partner. 
-            Their data-driven approach and innovative strategies transformed our business completely.&rdquo;
+            &ldquo;EcoLife has transformed not just my shopping habits, but my entire approach to living. 
+            They make sustainability feel achievable and enjoyable, not overwhelming.&rdquo;
           </blockquote>
           <div className="flex items-center justify-center space-x-4">
             <Avatar className="w-16 h-16">
-              <AvatarImage src="https://maxm-imggenurl.web.val.run/professional man CEO client testimonial business leader" alt="Client testimonial" />
-              <AvatarFallback className="bg-primary/20 text-primary font-semibold text-lg">AC</AvatarFallback>
+              <AvatarImage src="https://maxm-imggenurl.web.val.run/professional woman customer testimonial eco conscious lifestyle" alt="Customer testimonial" />
+              <AvatarFallback className="bg-primary/20 text-primary font-semibold text-lg">MJ</AvatarFallback>
             </Avatar>
             <div className="text-left">
-              <div className="font-semibold text-foreground text-lg">Alex Chen</div>
-              <div className="text-muted-foreground">CEO, TechStart Inc</div>
+              <div className="font-semibold text-foreground text-lg">Maria Johnson</div>
+              <div className="text-muted-foreground">EcoLife Community Member</div>
             </div>
           </div>
         </div>
@@ -311,21 +352,21 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Ready to Accelerate Your Growth?
+            Ready to Join Our Mission?
           </h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-            Join the ranks of successful businesses that have achieved explosive growth 
-            with GrowthLab Digital as their growth partner.
+            Be part of the movement towards a more sustainable future. Every small action 
+            contributes to a bigger change for our planet.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="dynamic-gradient hover:dynamic-glow text-primary-foreground border-0 font-semibold rounded-xl" asChild>
-              <Link href="/contact">
-                Start Your Growth Journey
+            <Button size="lg" className="natural-gradient hover:natural-glow text-primary-foreground border-0 font-semibold rounded-xl" asChild>
+              <Link href="/products">
+                Shop Sustainable Products
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/10 rounded-xl" asChild>
-              <Link href="/case-studies">
-                View Success Stories
+              <Link href="/community">
+                Join Our Community
               </Link>
             </Button>
           </div>
