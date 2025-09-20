@@ -1,236 +1,177 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Eye, Heart, Share2, Zap } from "lucide-react";
+import { ArrowRight, Heart, Eye, Download } from "lucide-react";
 import Link from "next/link";
 
-const FeaturedArt = () => {
-  const artworks = [
-    {
-      id: 1,
-      title: "Neon Dreams",
-      artist: "CyberVision AI",
-      category: "AI Generated",
-      image: "https://maxm-imggenurl.web.val.run/cyberpunk neon cityscape with glowing towers and flying cars, digital art, high contrast, vibrant colors",
-      price: "2.5 ETH",
-      likes: 1247,
-      views: 8934,
-      description: "A mesmerizing journey through neon-lit streets of the future",
-    },
-    {
-      id: 2,
-      title: "Digital Consciousness",
-      artist: "Neural Network",
-      category: "Abstract",
-      image: "https://maxm-imggenurl.web.val.run/abstract digital brain with glowing neural connections, cyberpunk style, electric blue and purple",
-      price: "1.8 ETH",
-      likes: 892,
-      views: 5621,
-      description: "Exploring the intersection of mind and machine",
-    },
-    {
-      id: 3,
-      title: "Holographic Entity",
-      artist: "Quantum Artist",
-      category: "3D Art",
-      image: "https://maxm-imggenurl.web.val.run/holographic humanoid figure with glitch effects, transparent and glowing, futuristic background",
-      price: "3.2 ETH",
-      likes: 1856,
-      views: 12043,
-      description: "A being caught between dimensions",
-    },
-    {
-      id: 4,
-      title: "Data Stream",
-      artist: "Code Painter",
-      category: "Generative",
-      image: "https://maxm-imggenurl.web.val.run/flowing streams of binary code and data, neon green and blue, matrix style, digital art",
-      price: "1.5 ETH",
-      likes: 634,
-      views: 4287,
-      description: "The beauty of information in motion",
-    },
-    {
-      id: 5,
-      title: "Cyber Samurai",
-      artist: "Future Legends",
-      category: "Character",
-      image: "https://maxm-imggenurl.web.val.run/cyberpunk samurai warrior with glowing katana, neon armor, dark futuristic city background",
-      price: "4.1 ETH",
-      likes: 2341,
-      views: 15672,
-      description: "Honor meets technology in this stunning piece",
-    },
-    {
-      id: 6,
-      title: "Quantum Flux",
-      artist: "Particle Dreams",
-      category: "Physics Art",
-      image: "https://maxm-imggenurl.web.val.run/quantum particles and energy waves, colorful abstract patterns, scientific visualization art",
-      price: "2.0 ETH",
-      likes: 1123,
-      views: 7891,
-      description: "Visualizing the invisible forces of the universe",
-    },
-  ];
+const featuredArtworks = [
+  {
+    id: 1,
+    title: "Digital Symphony",
+    artist: "Alex Chen",
+    image: "https://maxm-imggenurl.web.val.run/abstract digital art with flowing colors and musical notes, cyberpunk style",
+    category: "Abstract",
+    likes: 1247,
+    views: 8932,
+    price: "0.5 ETH",
+  },
+  {
+    id: 2,
+    title: "Neural Networks",
+    artist: "Maya Rodriguez",
+    image: "https://maxm-imggenurl.web.val.run/futuristic neural network visualization with glowing connections, digital art",
+    category: "AI Generated",
+    likes: 2156,
+    views: 15678,
+    price: "1.2 ETH",
+  },
+  {
+    id: 3,
+    title: "Quantum Dreams",
+    artist: "Jordan Kim",
+    image: "https://maxm-imggenurl.web.val.run/quantum physics inspired digital art with particle effects and cosmic colors",
+    category: "Sci-Fi",
+    likes: 3421,
+    views: 22345,
+    price: "2.1 ETH",
+  },
+  {
+    id: 4,
+    title: "Cyber Garden",
+    artist: "Luna Park",
+    image: "https://maxm-imggenurl.web.val.run/cyberpunk garden with neon plants and digital flowers, futuristic nature",
+    category: "Nature",
+    likes: 1876,
+    views: 12456,
+    price: "0.8 ETH",
+  },
+];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-    },
-  };
-
+export default function FeaturedArt() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-card/20">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Badge variant="outline" className="mb-4 text-primary border-primary/50">
-            <Zap className="mr-2 h-4 w-4" />
-            Featured Collection
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="neon-text">Digital</span>{" "}
-            <span className="text-accent">Masterpieces</span>
+          <h2 className="text-5xl font-bold text-foreground mb-6">
+            Featured <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Artworks</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover extraordinary digital artworks that push the boundaries of creativity and technology. Each piece tells a unique story in our cyberpunk universe.
+            Discover the most captivating digital masterpieces from our community of visionary artists
           </p>
         </motion.div>
 
         {/* Artworks Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {artworks.map((artwork) => (
-            <motion.div 
-              key={artwork.id} 
-              variants={itemVariants}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {featuredArtworks.map((artwork, index) => (
+            <motion.div
+              key={artwork.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
             >
-              <Card className="group overflow-hidden bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300">
-                <div className="relative overflow-hidden">
+              <div className="artwork-frame rounded-2xl overflow-hidden hover:neon-glow transition-all duration-500">
+                {/* Image Container */}
+                <div className="relative aspect-square overflow-hidden">
                   <img
                     src={artwork.image}
                     alt={artwork.title}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  
+                  {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
-                  {/* Overlay Actions */}
-                  <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="sm" variant="secondary" className="h-8 w-8 p-0">
-                      <Heart className="h-4 w-4" />
-                    </Button>
-                    <Button size="sm" variant="secondary" className="h-8 w-8 p-0">
-                      <Share2 className="h-4 w-4" />
-                    </Button>
+                  {/* Action Buttons */}
+                  <div className="absolute top-4 right-4 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="p-2 bg-background/80 backdrop-blur-sm rounded-full text-foreground hover:text-accent transition-colors"
+                    >
+                      <Heart className="w-4 h-4" />
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="p-2 bg-background/80 backdrop-blur-sm rounded-full text-foreground hover:text-primary transition-colors"
+                    >
+                      <Download className="w-4 h-4" />
+                    </motion.button>
                   </div>
 
                   {/* Category Badge */}
-                  <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground">
-                    {artwork.category}
-                  </Badge>
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full backdrop-blur-sm">
+                      {artwork.category}
+                    </span>
+                  </div>
                 </div>
 
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                        {artwork.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">by {artwork.artist}</p>
-                    </div>
-
-                    <p className="text-sm text-muted-foreground line-clamp-2">
-                      {artwork.description}
-                    </p>
-
-                    <div className="flex items-center justify-between text-sm text-muted-foreground">
-                      <div className="flex items-center space-x-4">
-                        <span className="flex items-center">
-                          <Eye className="h-4 w-4 mr-1" />
-                          {artwork.views.toLocaleString()}
-                        </span>
-                        <span className="flex items-center">
-                          <Heart className="h-4 w-4 mr-1" />
-                          {artwork.likes.toLocaleString()}
-                        </span>
-                      </div>
-                      <span className="text-primary font-bold">{artwork.price}</span>
-                    </div>
-
-                    <div className="flex space-x-2 pt-2">
-                      <Link href={`/artwork/${artwork.id}`} className="flex-1">
-                        <Button className="w-full bg-primary hover:bg-primary/80 neon-glow">
-                          View Details
-                        </Button>
-                      </Link>
-                      <Button variant="outline" size="sm" className="px-3">
-                        <Heart className="h-4 w-4" />
-                      </Button>
-                    </div>
+                {/* Content */}
+                <div className="p-6 space-y-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-1">
+                      {artwork.title}
+                    </h3>
+                    <p className="text-muted-foreground">by {artwork.artist}</p>
                   </div>
-                </CardContent>
-              </Card>
+
+                  {/* Stats */}
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center space-x-1">
+                        <Heart className="w-4 h-4" />
+                        <span>{artwork.likes}</span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <Eye className="w-4 h-4" />
+                        <span>{artwork.views}</span>
+                      </div>
+                    </div>
+                    <span className="font-semibold text-primary">{artwork.price}</span>
+                  </div>
+
+                  {/* View Button */}
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full py-3 bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-foreground font-medium rounded-xl hover:from-primary/20 hover:to-accent/20 transition-all duration-300 flex items-center justify-center space-x-2"
+                  >
+                    <span>View Details</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </motion.button>
+                </div>
+              </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         {/* View All Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center mt-16"
+          className="text-center mt-12"
         >
-          <Link href="/gallery">
-            <Button
-              size="lg"
-              variant="outline"
-              className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4"
-            >
-              Explore Full Gallery
-              <motion.div
-                className="ml-2"
-                animate={{ x: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                →
-              </motion.div>
-            </Button>
+          <Link
+            href="/gallery"
+            className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-xl hover:scale-105 transition-all duration-300"
+          >
+            <span>Explore All Artworks</span>
+            <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>
       </div>
     </section>
   );
-};
-
-export default FeaturedArt;
+}
