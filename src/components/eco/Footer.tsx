@@ -59,7 +59,7 @@ export default function Footer() {
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
-        <div className="absolute inset-0 organic-pattern opacity-10" />
+        <div className="absolute inset-0 elegant-pattern opacity-5" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -75,7 +75,7 @@ export default function Footer() {
               className="lg:col-span-2 space-y-8"
             >
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 natural-gradient rounded-2xl flex items-center justify-center">
+                <div className="w-12 h-12 professional-gradient rounded-xl flex items-center justify-center">
                   <Leaf className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <div className="flex flex-col">
@@ -113,7 +113,7 @@ export default function Footer() {
                     href={social.href}
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-10 h-10 bg-background/10 rounded-2xl flex items-center justify-center hover:bg-primary/20 transition-colors"
+                    className="w-10 h-10 bg-background/10 rounded-xl flex items-center justify-center hover:bg-primary/20 transition-colors"
                   >
                     <social.icon className="w-5 h-5" />
                   </motion.a>

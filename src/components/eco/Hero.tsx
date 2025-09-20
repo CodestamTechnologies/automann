@@ -14,67 +14,67 @@ const ecoStats = [
 ];
 
 const floatingElements = [
-  { icon: Leaf, delay: 0, x: 30, y: 20 },
+  { icon: Award, delay: 0, x: 30, y: 20 },
   { icon: Heart, delay: 1.2, x: -25, y: 30 },
   { icon: Users, delay: 2.4, x: 35, y: -15 },
 ];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background organic-pattern">
-      {/* Natural Background Elements */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background elegant-pattern">
+      {/* Professional Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Organic Shapes */}
+        {/* Elegant Shapes */}
         <motion.div
           animate={{
             rotate: [0, 360],
-            scale: [1, 1.1, 1],
+            scale: [1, 1.05, 1],
+          }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="absolute top-20 right-20 w-40 h-40 border-2 border-primary/15 rounded-full"
+        />
+        <motion.div
+          animate={{
+            rotate: [360, 0],
+            scale: [1, 0.95, 1],
           }}
           transition={{
             duration: 25,
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-20 right-20 w-40 h-40 border-2 border-primary/20 rounded-full"
+          className="absolute bottom-32 left-16 w-32 h-32 professional-gradient rounded-2xl transform rotate-6"
         />
         <motion.div
           animate={{
-            rotate: [360, 0],
-            scale: [1, 0.9, 1],
+            x: [0, 30, 0],
+            y: [0, -20, 0],
+            rotate: [0, 180, 360],
           }}
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear",
-          }}
-          className="absolute bottom-32 left-16 w-32 h-32 natural-gradient rounded-3xl transform rotate-12"
-        />
-        <motion.div
-          animate={{
-            x: [0, 40, 0],
-            y: [0, -30, 0],
-            rotate: [0, 90, 180, 270, 360],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-1/3 left-1/4 w-20 h-20 border-2 border-accent/30 transform rotate-45"
+          className="absolute top-1/3 left-1/4 w-20 h-20 border-2 border-accent/25 transform rotate-12"
         />
 
-        {/* Floating Natural Icons */}
+        {/* Floating Professional Icons */}
         {floatingElements.map((element, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ 
-              opacity: [0, 0.4, 0],
+              opacity: [0, 0.3, 0],
               scale: [0, 1, 0],
-              y: [0, -60, 0],
+              y: [0, -40, 0],
             }}
             transition={{
-              duration: 8,
+              duration: 10,
               delay: element.delay,
               repeat: Infinity,
               ease: "easeInOut",
@@ -85,35 +85,35 @@ export default function Hero() {
               top: `${40 + element.y}%`,
             }}
           >
-            <div className="w-16 h-16 bg-primary/15 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/20">
+            <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center backdrop-blur-sm border border-primary/15">
               <element.icon className="w-8 h-8 text-primary" />
             </div>
           </motion.div>
         ))}
 
-        {/* Natural Flow Lines */}
+        {/* Professional Flow Lines */}
         <motion.div
           animate={{ x: ["-100%", "100%"] }}
           transition={{
-            duration: 4,
+            duration: 6,
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-30"
+          className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-20"
         />
         <motion.div
           animate={{ x: ["100%", "-100%"] }}
           transition={{
-            duration: 5,
+            duration: 7,
             repeat: Infinity,
             ease: "linear",
-            delay: 2,
+            delay: 3,
           }}
-          className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-30"
+          className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-20"
         />
 
-        {/* Leaf Texture Pattern */}
-        <div className="absolute inset-0 leaf-texture opacity-10" />
+        {/* Professional Texture Pattern */}
+        <div className="absolute inset-0 texture-pattern opacity-5" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -144,7 +144,7 @@ export default function Hero() {
               
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
                 LIVE SUSTAINABLY,
-                <span className="block natural-gradient bg-clip-text text-transparent">
+                <span className="block professional-gradient bg-clip-text text-transparent">
                   LOVE NATURALLY
                 </span>
               </h1>
@@ -163,7 +163,7 @@ export default function Hero() {
             >
               <Button 
                 size="lg" 
-                className="natural-gradient hover:natural-glow text-primary-foreground border-0 group font-semibold rounded-xl"
+                className="professional-gradient hover:professional-glow text-primary-foreground border-0 group font-semibold rounded-xl"
                 asChild
               >
                 <Link href="/products">
@@ -199,7 +199,7 @@ export default function Hero() {
                   whileHover={{ scale: 1.05 }}
                   className="text-center group"
                 >
-                  <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:natural-glow transition-all duration-300">
+                  <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:professional-glow transition-all duration-300">
                     <stat.icon className="w-8 h-8 text-primary" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
@@ -237,8 +237,8 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/20 rounded-3xl" />
               
-              {/* Natural Overlay */}
-              <div className="absolute inset-0 earth-overlay rounded-3xl" />
+              {/* Professional Overlay */}
+              <div className="absolute inset-0 sophisticated-overlay rounded-3xl" />
             </motion.div>
 
             {/* Floating Info Cards */}
@@ -248,10 +248,10 @@ export default function Hero() {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="absolute -top-8 -right-8 z-20"
             >
-              <Card className="p-6 bg-card/95 backdrop-blur-xl border border-primary/30 shadow-2xl natural-glow">
+              <Card className="p-6 bg-card/95 backdrop-blur-xl border border-primary/30 shadow-2xl professional-glow">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center">
-                    <Leaf className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center">
+                    <Award className="w-8 h-8 text-primary" />
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">100% Natural</div>
@@ -269,7 +269,7 @@ export default function Hero() {
             >
               <Card className="p-6 bg-card/95 backdrop-blur-xl border border-accent/30 shadow-2xl">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center">
                     <Heart className="w-8 h-8 text-accent" />
                   </div>
                   <div>
@@ -280,25 +280,25 @@ export default function Hero() {
               </Card>
             </motion.div>
 
-            {/* Natural Flow Elements */}
+            {/* Professional Flow Elements */}
             <motion.div
-              animate={{ y: [0, -120, 0] }}
+              animate={{ y: [0, -80, 0] }}
               transition={{
-                duration: 4,
+                duration: 5,
                 repeat: Infinity,
                 ease: "linear",
               }}
-              className="absolute top-1/4 left-4 w-1 h-24 bg-gradient-to-b from-primary to-transparent opacity-40"
+              className="absolute top-1/4 left-4 w-1 h-24 bg-gradient-to-b from-primary to-transparent opacity-30"
             />
             <motion.div
-              animate={{ y: [0, 120, 0] }}
+              animate={{ y: [0, 80, 0] }}
               transition={{
-                duration: 3.5,
+                duration: 4.5,
                 repeat: Infinity,
                 ease: "linear",
-                delay: 2,
+                delay: 2.5,
               }}
-              className="absolute bottom-1/4 right-4 w-1 h-24 bg-gradient-to-t from-accent to-transparent opacity-40"
+              className="absolute bottom-1/4 right-4 w-1 h-24 bg-gradient-to-t from-accent to-transparent opacity-30"
             />
           </motion.div>
         </div>

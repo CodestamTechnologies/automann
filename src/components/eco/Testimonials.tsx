@@ -74,7 +74,7 @@ export default function Testimonials() {
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
             What Our Community
-            <span className="block natural-gradient bg-clip-text text-transparent">
+            <span className="block professional-gradient bg-clip-text text-transparent">
               Says About Us
             </span>
           </h2>
@@ -156,7 +156,7 @@ export default function Testimonials() {
                 viewport={{ once: true }}
                 className="text-center group"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:natural-glow transition-all duration-300">
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:professional-glow transition-all duration-300">
                   <stat.icon className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>

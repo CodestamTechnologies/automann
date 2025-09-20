@@ -10,8 +10,8 @@ export default function Newsletter() {
   return (
     <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 organic-pattern opacity-20" />
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+      <div className="absolute inset-0 elegant-pattern opacity-15" />
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-40" />
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -29,7 +29,7 @@ export default function Newsletter() {
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="mx-auto w-20 h-20 bg-primary/20 rounded-3xl flex items-center justify-center natural-glow"
+                  className="mx-auto w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center professional-glow"
                 >
                   <Mail className="w-10 h-10 text-primary" />
                 </motion.div>
@@ -44,7 +44,7 @@ export default function Newsletter() {
                 >
                   <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
                     Join Our
-                    <span className="block natural-gradient bg-clip-text text-transparent">
+                    <span className="block professional-gradient bg-clip-text text-transparent">
                       Green Community
                     </span>
                   </h2>
@@ -62,8 +62,8 @@ export default function Newsletter() {
                   viewport={{ once: true }}
                   className="grid md:grid-cols-3 gap-6 my-12"
                 >
-                  <div className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-2xl group hover:bg-primary/10 transition-all duration-300">
-                    <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center group-hover:natural-glow transition-all duration-300">
+                  <div className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-xl group hover:bg-primary/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center group-hover:professional-glow transition-all duration-300">
                       <Leaf className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -72,8 +72,8 @@ export default function Newsletter() {
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-2xl group hover:bg-primary/10 transition-all duration-300">
-                    <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center group-hover:natural-glow transition-all duration-300">
+                  <div className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-xl group hover:bg-primary/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center group-hover:professional-glow transition-all duration-300">
                       <Heart className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -82,8 +82,8 @@ export default function Newsletter() {
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-2xl group hover:bg-primary/10 transition-all duration-300">
-                    <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center group-hover:natural-glow transition-all duration-300">
+                  <div className="flex items-center space-x-4 p-4 bg-secondary/30 rounded-xl group hover:bg-primary/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center group-hover:professional-glow transition-all duration-300">
                       <Users className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -107,7 +107,7 @@ export default function Newsletter() {
                       placeholder="Enter your email address"
                       className="flex-1 bg-background/50 border-primary/30 focus:border-primary text-foreground placeholder:text-muted-foreground rounded-xl"
                     />
-                    <Button className="natural-gradient hover:natural-glow text-primary-foreground border-0 font-semibold px-8 rounded-xl">
+                    <Button className="professional-gradient hover:professional-glow text-primary-foreground border-0 font-semibold px-8 rounded-xl">
                       <Leaf className="w-4 h-4 mr-2" />
                       Subscribe
                     </Button>

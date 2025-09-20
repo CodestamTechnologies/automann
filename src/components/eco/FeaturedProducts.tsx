@@ -70,8 +70,8 @@ export default function FeaturedProducts() {
   return (
     <section className="py-24 bg-secondary/10 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 organic-pattern opacity-30" />
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+      <div className="absolute inset-0 elegant-pattern opacity-20" />
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-40" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -87,7 +87,7 @@ export default function FeaturedProducts() {
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
             Discover Our
-            <span className="block natural-gradient bg-clip-text text-transparent">
+            <span className="block professional-gradient bg-clip-text text-transparent">
               Eco-Friendly Collection
             </span>
           </h2>
@@ -108,7 +108,7 @@ export default function FeaturedProducts() {
               whileHover={{ y: -10 }}
               className="group"
             >
-              <Card className="h-full overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 bg-card/80 backdrop-blur-xl border border-primary/20 hover:border-primary/40">
+              <Card className="h-full overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 bg-card/80 backdrop-blur-xl border border-primary/20 hover:border-primary/40 rounded-2xl">
                 <div className="relative overflow-hidden">
                   <img
                     src={product.image}
@@ -139,7 +139,7 @@ export default function FeaturedProducts() {
                   
                   {/* Icon Overlay */}
                   <div className="absolute bottom-4 right-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/30">
+                    <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-primary/30">
                       <product.icon className="w-6 h-6 text-primary" />
                     </div>
                   </div>
@@ -184,7 +184,7 @@ export default function FeaturedProducts() {
                   </div>
 
                   {/* Action Button */}
-                  <Button className="w-full natural-gradient hover:natural-glow text-primary-foreground border-0 group font-semibold rounded-xl" asChild>
+                  <Button className="w-full professional-gradient hover:professional-glow text-primary-foreground border-0 group font-semibold rounded-xl" asChild>
                     <Link href={`/products/${product.id}`}>
                       <ShoppingBag className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
                       Add to Cart
