@@ -43,34 +43,34 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* Zen Wellness Nature-Inspired Palette */
+/* Futuristic Tech Innovation Palette */
 :root {
-  --radius: 0.75rem;
-  --background: oklch(0.99 0.005 120); /* soft sage white */
-  --foreground: oklch(0.15 0.02 120); /* deep forest */
-  --card: oklch(0.98 0.008 120); /* pure white with hint of sage */
-  --card-foreground: oklch(0.18 0.02 120);
-  --popover: oklch(0.99 0.005 120);
-  --popover-foreground: oklch(0.15 0.02 120);
-  --primary: oklch(0.45 0.12 140); /* serene forest green */
-  --primary-foreground: oklch(0.98 0.005 120);
-  --secondary: oklch(0.92 0.015 120); /* light sage */
-  --secondary-foreground: oklch(0.25 0.02 120);
-  --muted: oklch(0.94 0.01 120);
-  --muted-foreground: oklch(0.50 0.02 120);
-  --accent: oklch(0.55 0.08 100); /* warm earth tone */
-  --accent-foreground: oklch(0.12 0.01 120);
-  --destructive: oklch(0.60 0.15 20); /* gentle coral */
-  --border: oklch(0.88 0.01 120);
-  --input: oklch(0.96 0.008 120);
-  --ring: oklch(0.45 0.12 140);
-  --chart-1: oklch(0.45 0.12 140);
-  --chart-2: oklch(0.55 0.08 100);
-  --chart-3: oklch(0.35 0.06 160);
-  --chart-4: oklch(0.65 0.05 80);
-  --chart-5: oklch(0.40 0.08 180);
-  --sidebar: oklch(0.98 0.008 120);
-  --sidebar-foreground: oklch(0.18 0.02 120);
+  --radius: 0.5rem;
+  --background: oklch(0.05 0.01 240); /* deep space black */
+  --foreground: oklch(0.95 0.01 240); /* bright white */
+  --card: oklch(0.08 0.01 240); /* dark tech surface */
+  --card-foreground: oklch(0.95 0.01 240);
+  --popover: oklch(0.08 0.01 240);
+  --popover-foreground: oklch(0.95 0.01 240);
+  --primary: oklch(0.70 0.20 200); /* electric blue */
+  --primary-foreground: oklch(0.05 0.01 240);
+  --secondary: oklch(0.15 0.01 240); /* dark gray */
+  --secondary-foreground: oklch(0.90 0.01 240);
+  --muted: oklch(0.12 0.01 240);
+  --muted-foreground: oklch(0.60 0.01 240);
+  --accent: oklch(0.75 0.18 280); /* vibrant purple */
+  --accent-foreground: oklch(0.05 0.01 240);
+  --destructive: oklch(0.65 0.20 20); /* tech red */
+  --border: oklch(0.20 0.01 240);
+  --input: oklch(0.12 0.01 240);
+  --ring: oklch(0.70 0.20 200);
+  --chart-1: oklch(0.70 0.20 200);
+  --chart-2: oklch(0.75 0.18 280);
+  --chart-3: oklch(0.60 0.15 160);
+  --chart-4: oklch(0.80 0.12 320);
+  --chart-5: oklch(0.65 0.18 40);
+  --sidebar: oklch(0.08 0.01 240);
+  --sidebar-foreground: oklch(0.95 0.01 240);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
@@ -80,31 +80,31 @@
 }
 
 .dark {
-  --background: oklch(0.08 0.01 120); /* deep forest night */
-  --foreground: oklch(0.95 0.005 120); /* soft moonlight */
-  --card: oklch(0.10 0.01 120); /* darker forest */
-  --card-foreground: oklch(0.95 0.005 120);
-  --popover: oklch(0.10 0.01 120);
-  --popover-foreground: oklch(0.96 0.005 120);
-  --primary: oklch(0.60 0.15 140); /* brighter forest green */
-  --primary-foreground: oklch(0.08 0.01 120);
-  --secondary: oklch(0.18 0.01 120); /* dark sage */
-  --secondary-foreground: oklch(0.90 0.005 120);
-  --muted: oklch(0.18 0.01 120);
-  --muted-foreground: oklch(0.65 0.01 120);
-  --accent: oklch(0.65 0.10 100); /* warm earth accent */
-  --accent-foreground: oklch(0.08 0.01 120);
-  --destructive: oklch(0.65 0.18 20); /* soft coral */
-  --border: oklch(0.22 0.01 120);
-  --input: oklch(0.15 0.01 120);
-  --ring: oklch(0.60 0.15 140);
-  --chart-1: oklch(0.60 0.15 140);
-  --chart-2: oklch(0.65 0.10 100);
-  --chart-3: oklch(0.45 0.08 160);
-  --chart-4: oklch(0.70 0.06 80);
-  --chart-5: oklch(0.50 0.10 180);
-  --sidebar: oklch(0.10 0.01 120);
-  --sidebar-foreground: oklch(0.95 0.005 120);
+  --background: oklch(0.03 0.01 240); /* deeper space */
+  --foreground: oklch(0.98 0.01 240); /* pure white */
+  --card: oklch(0.06 0.01 240); /* darker tech surface */
+  --card-foreground: oklch(0.98 0.01 240);
+  --popover: oklch(0.06 0.01 240);
+  --popover-foreground: oklch(0.98 0.01 240);
+  --primary: oklch(0.75 0.22 200); /* brighter electric blue */
+  --primary-foreground: oklch(0.03 0.01 240);
+  --secondary: oklch(0.12 0.01 240); /* dark gray */
+  --secondary-foreground: oklch(0.95 0.01 240);
+  --muted: oklch(0.10 0.01 240);
+  --muted-foreground: oklch(0.70 0.01 240);
+  --accent: oklch(0.80 0.20 280); /* brighter purple */
+  --accent-foreground: oklch(0.03 0.01 240);
+  --destructive: oklch(0.70 0.22 20); /* brighter tech red */
+  --border: oklch(0.18 0.01 240);
+  --input: oklch(0.10 0.01 240);
+  --ring: oklch(0.75 0.22 200);
+  --chart-1: oklch(0.75 0.22 200);
+  --chart-2: oklch(0.80 0.20 280);
+  --chart-3: oklch(0.65 0.17 160);
+  --chart-4: oklch(0.85 0.14 320);
+  --chart-5: oklch(0.70 0.20 40);
+  --sidebar: oklch(0.06 0.01 240);
+  --sidebar-foreground: oklch(0.98 0.01 240);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
@@ -118,15 +118,18 @@
   body { @apply bg-background text-foreground font-sans; }
 }
 
-/* Zen wellness utility classes */
+/* Futuristic tech utility classes */
 @layer utilities {
-  .zen-glow { box-shadow: 0 0 20px oklch(0.45 0.12 140 / 0.15), 0 0 6px oklch(0.55 0.08 100 / 0.2); }
-  .nature-gradient { background: linear-gradient(135deg, oklch(0.45 0.12 140), oklch(0.55 0.08 100)); }
-  .serene-border { border: 1px solid oklch(0.45 0.12 140 / 0.2); }
+  .tech-glow { box-shadow: 0 0 30px oklch(0.70 0.20 200 / 0.3), 0 0 10px oklch(0.75 0.18 280 / 0.4); }
+  .tech-gradient { background: linear-gradient(135deg, oklch(0.70 0.20 200), oklch(0.75 0.18 280)); }
+  .tech-border { border: 1px solid oklch(0.70 0.20 200 / 0.3); }
+  .cyber-grid { background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px; }
+  .hologram { background: linear-gradient(45deg, transparent 30%, oklch(0.70 0.20 200 / 0.1) 50%, transparent 70%); }
 }
 
-@keyframes breathe { 0%,100%{transform:scale(1)} 50%{transform:scale(1.02)} }
-@keyframes float-gentle { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-@keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
-@keyframes slideInLeft { from{opacity:0;transform:translateX(-20px)} to{opacity:1;transform:translateX(0)} }
-@keyframes pulse-zen { 0%,100%{opacity:1} 50%{opacity:0.85} }
+@keyframes tech-pulse { 0%,100%{transform:scale(1); opacity:1} 50%{transform:scale(1.05); opacity:0.8} }
+@keyframes float-tech { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-10px) rotate(1deg)} }
+@keyframes slideInTech { from{opacity:0;transform:translateX(-30px) skewX(-5deg)} to{opacity:1;transform:translateX(0) skewX(0deg)} }
+@keyframes fadeInTech { from{opacity:0;transform:translateY(30px) scale(0.9)} to{opacity:1;transform:translateY(0) scale(1)} }
+@keyframes scan-line { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+@keyframes matrix-rain { 0%{transform:translateY(-100vh)} 100%{transform:translateY(100vh)} }

@@ -10,38 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ZenFit Wellness &amp; Holistic Health Center",
+  title: "NexusTech Innovation Hub",
   description:
-    "Discover your path to wellness at ZenFit — holistic fitness, mindful movement, nature-inspired wellness programs, and serene healing spaces.",
+    "Leading the future of technology at NexusTech — cutting-edge AI solutions, quantum computing, advanced robotics, and next-generation digital transformation.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "wellness",
-    "fitness",
-    "holistic health",
-    "mindful movement",
-    "yoga",
-    "meditation",
-    "nature therapy",
-    "wellness center",
-    "zen fitness",
-    "mindfulness",
+    "technology",
+    "innovation",
+    "artificial intelligence",
+    "quantum computing",
+    "robotics",
+    "digital transformation",
+    "tech solutions",
+    "future technology",
+    "AI development",
+    "cyber security",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "ZenFit Wellness &amp; Holistic Health Center",
+    title: "NexusTech Innovation Hub",
     description:
-      "Transform your wellness journey with nature-inspired fitness, mindful movement, and holistic healing experiences.",
+      "Pioneering the future with cutting-edge technology solutions, AI innovation, and next-generation digital transformation.",
     url: "https://codestam.com",
-    siteName: "ZenFit Wellness",
+    siteName: "NexusTech",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZenFit Wellness &amp; Holistic Health Center",
+    title: "NexusTech Innovation Hub",
     description:
-      "Transform your wellness journey with nature-inspired fitness, mindful movement, and holistic healing experiences.",
+      "Pioneering the future with cutting-edge technology solutions, AI innovation, and next-generation digital transformation.",
   },
 };
 

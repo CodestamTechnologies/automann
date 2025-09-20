@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/wellness/Navbar";
-import Footer from "@/components/wellness/Footer";
+import Navbar from "@/components/tech/Navbar";
+import Footer from "@/components/tech/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, MessageCircle, Calendar } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageSquare, Code, Shield, Brain } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us — ZenFit Wellness Center",
-  description: "Get in touch with ZenFit Wellness Center. Contact us for classes, programs, consultations, or any wellness questions.",
+  title: "Contact Us — NexusTech Innovation Hub",
+  description: "Get in touch with NexusTech Innovation Hub. Contact us for technology solutions, partnerships, support, or any inquiries about our cutting-edge innovations.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
@@ -17,45 +17,50 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Visit Us",
-    details: ["123 Wellness Way", "Serene City, SC 12345"],
-    description: "Located in the heart of the city, surrounded by nature"
+    title: "Visit Our HQ",
+    details: ["123 Innovation Drive", "Tech City, TC 12345", "United States"],
+    description: "Located in the heart of Silicon Valley"
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["(555) 123-WELL", "(555) 123-HELP"],
-    description: "Available Monday-Friday, 6 AM - 9 PM"
+    details: ["+1 (555) 123-TECH", "+1 (555) 123-HELP"],
+    description: "Available 24/7 for enterprise support"
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["hello@zenfit.com", "info@zenfit.com"],
-    description: "We respond within 24 hours"
+    details: ["hello@nexustech.com", "support@nexustech.com"],
+    description: "We respond within 2 hours"
   },
   {
     icon: Clock,
-    title: "Hours",
-    details: ["Mon-Fri: 6 AM - 9 PM", "Sat-Sun: 7 AM - 8 PM"],
-    description: "Extended hours for early morning and evening classes"
+    title: "Business Hours",
+    details: ["Mon-Fri: 6 AM - 10 PM PST", "Sat-Sun: 8 AM - 6 PM PST"],
+    description: "Global support across all time zones"
   }
 ];
 
 const services = [
   {
-    title: "Class Bookings",
-    description: "Reserve your spot in our yoga, meditation, and fitness classes",
-    icon: Calendar
+    title: "Technology Solutions",
+    description: "Get expert consultation on AI, quantum computing, and cybersecurity solutions",
+    icon: Brain
   },
   {
-    title: "Wellness Consultations",
-    description: "Schedule a personalized wellness assessment and program planning",
-    icon: MessageCircle
+    title: "Developer Support",
+    description: "Technical support for APIs, SDKs, and integration assistance",
+    icon: Code
   },
   {
-    title: "Group Programs",
-    description: "Inquire about corporate wellness programs and group sessions",
-    icon: Calendar
+    title: "Security Consultation",
+    description: "Cybersecurity assessment and implementation guidance",
+    icon: Shield
+  },
+  {
+    title: "Partnership Opportunities",
+    description: "Explore collaboration and partnership possibilities",
+    icon: MessageSquare
   }
 ];
 
@@ -65,34 +70,41 @@ export default function ContactPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-background via-background to-secondary/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6">
-            <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
-              Get in Touch
+      <section className="pt-24 pb-20 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 cyber-grid opacity-20" />
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center space-y-8">
+            <h1 className="text-5xl sm:text-6xl font-bold text-foreground">
+              Get in
+              <span className="block tech-gradient bg-clip-text text-transparent">
+                Touch
+              </span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We&apos;re here to help you start your wellness journey. Reach out to us for classes, consultations, 
-              or any questions about our programs and services.
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Ready to transform your business with cutting-edge technology? Our team of experts 
+              is here to help you navigate the future of innovation.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg bg-card/50 backdrop-blur-sm">
+              <Card key={index} className="text-center border-0 shadow-xl bg-card/80 backdrop-blur-xl border border-primary/10">
                 <CardContent className="p-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <info.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {info.title}
                   </h3>
-                  <div className="space-y-1 mb-3">
+                  <div className="space-y-1 mb-4">
                     {info.details.map((detail, idx) => (
                       <p key={idx} className="text-muted-foreground text-sm">
                         {detail}
@@ -107,15 +119,15 @@ export default function ContactPage() {
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <Card className="border-0 shadow-lg bg-card/50 backdrop-blur-sm">
+            <Card className="border-0 shadow-2xl bg-card/80 backdrop-blur-xl border border-primary/10">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-foreground">
+                <CardTitle className="text-3xl font-bold text-foreground">
                   Send us a Message
                 </CardTitle>
-                <CardDescription>
-                  Fill out the form below and we&apos;ll get back to you within 24 hours.
+                <CardDescription className="text-lg">
+                  Fill out the form below and we&apos;ll get back to you within 2 hours.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -128,7 +140,7 @@ export default function ContactPage() {
                       id="firstName"
                       type="text"
                       placeholder="Your first name"
-                      className="bg-background/50 border-border/50"
+                      className="bg-background/50 border-primary/30 focus:border-primary text-foreground"
                     />
                   </div>
                   <div>
@@ -139,7 +151,7 @@ export default function ContactPage() {
                       id="lastName"
                       type="text"
                       placeholder="Your last name"
-                      className="bg-background/50 border-border/50"
+                      className="bg-background/50 border-primary/30 focus:border-primary text-foreground"
                     />
                   </div>
                 </div>
@@ -151,20 +163,20 @@ export default function ContactPage() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="your.email@example.com"
-                    className="bg-background/50 border-border/50"
+                    placeholder="your.email@company.com"
+                    className="bg-background/50 border-primary/30 focus:border-primary text-foreground"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                    Phone Number
+                  <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                    Company
                   </label>
                   <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="(555) 123-4567"
-                    className="bg-background/50 border-border/50"
+                    id="company"
+                    type="text"
+                    placeholder="Your company name"
+                    className="bg-background/50 border-primary/30 focus:border-primary text-foreground"
                   />
                 </div>
 
@@ -174,14 +186,15 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="service"
-                    className="w-full px-3 py-2 bg-background/50 border border-border/50 rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-3 py-2 bg-background/50 border border-primary/30 rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                   >
                     <option value="">Select a service</option>
-                    <option value="yoga">Yoga Classes</option>
-                    <option value="meditation">Meditation</option>
-                    <option value="fitness">Fitness Programs</option>
-                    <option value="nutrition">Nutrition Counseling</option>
-                    <option value="wellness">Wellness Coaching</option>
+                    <option value="ai-solutions">AI Solutions</option>
+                    <option value="quantum-computing">Quantum Computing</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="developer-tools">Developer Tools</option>
+                    <option value="consulting">Technology Consulting</option>
+                    <option value="partnership">Partnership</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -192,12 +205,12 @@ export default function ContactPage() {
                   </label>
                   <Textarea
                     id="message"
-                    placeholder="Tell us about your wellness goals and how we can help..."
-                    className="min-h-[120px] bg-background/50 border-border/50"
+                    placeholder="Tell us about your project and how we can help..."
+                    className="min-h-[150px] bg-background/50 border-primary/30 focus:border-primary text-foreground"
                   />
                 </div>
 
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button className="w-full tech-gradient hover:tech-glow text-primary-foreground border-0 font-semibold">
                   Send Message
                 </Button>
               </CardContent>
@@ -206,20 +219,20 @@ export default function ContactPage() {
             {/* Services & Map */}
             <div className="space-y-8">
               {/* Services */}
-              <Card className="border-0 shadow-lg bg-card/50 backdrop-blur-sm">
+              <Card className="border-0 shadow-xl bg-card/80 backdrop-blur-xl border border-primary/10">
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold text-foreground">
+                  <CardTitle className="text-2xl font-bold text-foreground">
                     How We Can Help
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-6">
                   {services.map((service, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <service.icon className="w-5 h-5 text-primary" />
+                    <div key={index} className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <service.icon className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground">{service.title}</h4>
+                        <h4 className="font-semibold text-foreground mb-1">{service.title}</h4>
                         <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
                     </div>
@@ -228,30 +241,30 @@ export default function ContactPage() {
               </Card>
 
               {/* Map Placeholder */}
-              <Card className="border-0 shadow-lg bg-card/50 backdrop-blur-sm">
+              <Card className="border-0 shadow-xl bg-card/80 backdrop-blur-xl border border-primary/10">
                 <CardContent className="p-0">
                   <div className="h-64 bg-secondary/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center space-y-2">
-                      <MapPin className="w-12 h-12 text-primary/60 mx-auto" />
-                      <p className="text-muted-foreground">Interactive Map</p>
-                      <p className="text-sm text-muted-foreground">123 Wellness Way, Serene City</p>
+                    <div className="text-center space-y-3">
+                      <MapPin className="w-16 h-16 text-primary/60 mx-auto" />
+                      <p className="text-muted-foreground font-medium">Interactive Map</p>
+                      <p className="text-sm text-muted-foreground">123 Innovation Drive, Tech City</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Quick Contact */}
-              <Card className="border-0 shadow-lg bg-gradient-to-br from-primary/5 via-background to-accent/5">
+              <Card className="border-0 shadow-xl bg-gradient-to-br from-primary/5 via-background to-accent/5 border border-primary/10">
                 <CardContent className="p-6 text-center">
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
                     Need Immediate Assistance?
                   </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Call us directly for urgent inquiries or same-day class bookings.
+                  <p className="text-muted-foreground mb-6">
+                    For urgent technical support or enterprise inquiries, call us directly.
                   </p>
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Button className="tech-gradient hover:tech-glow text-primary-foreground border-0 font-semibold">
                     <Phone className="w-4 h-4 mr-2" />
-                    Call Now: (555) 123-WELL
+                    Call Now: +1 (555) 123-TECH
                   </Button>
                 </CardContent>
               </Card>
