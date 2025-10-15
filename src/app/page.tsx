@@ -1,56 +1,76 @@
-import type { Metadata } from "next";
-import Navbar from "@/components/rescue/Navbar";
-import Hero from "@/components/rescue/Hero";
-import OurStory from "@/components/rescue/OurStory";
-import RescueAnimals from "@/components/rescue/RescueAnimals";
-import HowToHelp from "@/components/rescue/HowToHelp";
-import Footer from "@/components/rescue/Footer";
+import { Metadata } from "next";
+import Navbar from "@/components/architecture/Navbar";
+import Hero from "@/components/architecture/Hero";
+import FeaturedProjects from "@/components/architecture/FeaturedProjects";
+import Services from "@/components/architecture/Services";
+import Testimonials from "@/components/architecture/Testimonials";
+import Footer from "@/components/architecture/Footer";
 
 export const metadata: Metadata = {
-  title: "Paws & Hearts — Animal Rescue & Adoption Center",
-  description:
-    "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending. Join us in our mission to give hope to every paw.",
-  publisher: "Codestam Technologies",
-  metadataBase: new URL("https://codestam.com"),
+  title: "Architect Studio - Modern Architecture & Design Services",
+  description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects. From concept to completion, we create inspiring spaces that stand the test of time.",
   keywords: [
-    "animal rescue",
-    "pet adoption",
-    "animal shelter",
-    "volunteer",
-    "foster animals",
-    "animal welfare",
-    "pet care",
-    "rescue dogs",
-    "rescue cats",
-    "animal rehabilitation",
+    "architecture",
+    "architectural design",
+    "modern architecture",
+    "residential design",
+    "commercial architecture",
+    "urban planning",
+    "interior design",
+    "landscape architecture",
+    "sustainable design",
+    "building design"
   ],
-  authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
+  authors: [{ name: "Codestam Technologies" }],
   creator: "Codestam Technologies",
+  publisher: "Codestam Technologies",
   openGraph: {
-    title: "Paws & Hearts — Animal Rescue & Adoption Center",
-    description:
-      "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending.",
+    title: "Architect Studio - Modern Architecture & Design Services",
+    description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects.",
     url: "https://codestam.com",
-    siteName: "Paws & Hearts",
-    type: "website",
+    siteName: "Architect Studio",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&crop=center",
+        width: 1200,
+        height: 630,
+        alt: "Architect Studio - Modern Architecture & Design"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paws & Hearts — Animal Rescue & Adoption Center",
-    description:
-      "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending.",
+    title: "Architect Studio - Modern Architecture & Design Services",
+    description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects.",
+    images: ["https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&crop=center"]
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  verification: {
+    google: "your-google-verification-code"
+  }
 };
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <OurStory />
-      <RescueAnimals />
-      <HowToHelp />
+      <FeaturedProjects />
+      <Services />
+      <Testimonials />
       <Footer />
-    </div>
+    </main>
   );
 }
