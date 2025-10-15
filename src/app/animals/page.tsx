@@ -3,13 +3,13 @@ import Navbar from "@/components/rescue/Navbar";
 import Footer from "@/components/rescue/Footer";
 
 export const metadata: Metadata = {
-  title: "About — Paws & Hearts | Our Story & Mission",
-  description: "Learn about Paws & Hearts&apos;s mission to rescue, rehabilitate, and rehome animals in need. Discover our story and the people behind our work.",
+  title: "Rescue Animals — Paws & Hearts | Available for Adoption",
+  description: "Meet our amazing rescue animals waiting for their forever homes. Browse dogs, cats, and other pets available for adoption.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
 
-export default function AboutPage() {
+export default function AnimalsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -18,10 +18,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-6xl font-bold text-foreground mb-6">
-              About <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Paws & Hearts</span>
+              Our <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Rescue Animals</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Learn about our mission, our story, and the dedicated people who make our animal rescue work possible.
+              Every animal has a story, and every story deserves a happy ending. Meet our amazing rescue animals waiting for their forever homes.
             </p>
           </div>
         </div>
@@ -31,3 +31,6 @@ export default function AboutPage() {
     </div>
   );
 }
+
+
+

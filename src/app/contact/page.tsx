@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/cyberpunk/Navbar";
-import Footer from "@/components/cyberpunk/Footer";
+import Navbar from "@/components/rescue/Navbar";
+import Footer from "@/components/rescue/Footer";
 
 export const metadata: Metadata = {
-  title: "Contact — ChromaSpace | Get in Touch",
-  description: "Contact ChromaSpace for inquiries, collaborations, or support. We&apos;re here to help with your digital art journey.",
+  title: "Contact — Paws & Hearts | Get in Touch",
+  description: "Contact Paws & Hearts for adoption inquiries, volunteer opportunities, or emergency animal rescue. We&apos;re here to help 24/7.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
 };
@@ -21,7 +21,7 @@ export default function ContactPage() {
               Get in <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to start your digital art journey? We&apos;re here to help you create, explore, and discover
+              Have questions about adoption, volunteering, or need emergency animal rescue? We&apos;re here to help.
             </p>
           </div>
         </div>

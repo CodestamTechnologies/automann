@@ -10,38 +10,38 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ChromaSpace — Digital Art Gallery & Creative Studio",
+  title: "Paws & Hearts — Animal Rescue & Adoption Center",
   description:
-    "Explore the future of digital creativity through our curated collection of AI-generated masterpieces, interactive installations, and cutting-edge artistic expressions. Where art meets technology.",
+    "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending. Join us in our mission to give hope to every paw.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "digital art",
-    "AI art",
-    "NFT marketplace",
-    "digital creativity",
-    "cyberpunk art",
-    "neural networks",
-    "blockchain art",
-    "virtual gallery",
-    "interactive art",
-    "futuristic design",
+    "animal rescue",
+    "pet adoption",
+    "animal shelter",
+    "volunteer",
+    "foster animals",
+    "animal welfare",
+    "pet care",
+    "rescue dogs",
+    "rescue cats",
+    "animal rehabilitation",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "ChromaSpace — Digital Art Gallery & Creative Studio",
+    title: "Paws & Hearts — Animal Rescue & Adoption Center",
     description:
-      "Explore the future of digital creativity through our curated collection of AI-generated masterpieces, interactive installations, and cutting-edge artistic expressions.",
+      "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending.",
     url: "https://codestam.com",
-    siteName: "ChromaSpace",
+    siteName: "Paws & Hearts",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChromaSpace — Digital Art Gallery & Creative Studio",
+    title: "Paws & Hearts — Animal Rescue & Adoption Center",
     description:
-      "Explore the future of digital creativity through our curated collection of AI-generated masterpieces, interactive installations, and cutting-edge artistic expressions.",
+      "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending.",
   },
 };
 

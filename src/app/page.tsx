@@ -1,44 +1,44 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/cyberpunk/Navbar";
-import Hero from "@/components/cyberpunk/Hero";
-import FeaturedArt from "@/components/cyberpunk/FeaturedArt";
-import ArtistSpotlight from "@/components/cyberpunk/ArtistSpotlight";
-import TechShowcase from "@/components/cyberpunk/TechShowcase";
-import Footer from "@/components/cyberpunk/Footer";
+import Navbar from "@/components/rescue/Navbar";
+import Hero from "@/components/rescue/Hero";
+import OurStory from "@/components/rescue/OurStory";
+import RescueAnimals from "@/components/rescue/RescueAnimals";
+import HowToHelp from "@/components/rescue/HowToHelp";
+import Footer from "@/components/rescue/Footer";
 
 export const metadata: Metadata = {
-  title: "ChromaSpace — Digital Art Gallery & Creative Studio",
+  title: "Paws & Hearts — Animal Rescue & Adoption Center",
   description:
-    "Explore the future of digital creativity through our curated collection of AI-generated masterpieces, interactive installations, and cutting-edge artistic expressions. Where art meets technology.",
+    "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending. Join us in our mission to give hope to every paw.",
   publisher: "Codestam Technologies",
   metadataBase: new URL("https://codestam.com"),
   keywords: [
-    "digital art",
-    "AI art",
-    "NFT marketplace",
-    "digital creativity",
-    "cyberpunk art",
-    "neural networks",
-    "blockchain art",
-    "virtual gallery",
-    "interactive art",
-    "futuristic design",
+    "animal rescue",
+    "pet adoption",
+    "animal shelter",
+    "volunteer",
+    "foster animals",
+    "animal welfare",
+    "pet care",
+    "rescue dogs",
+    "rescue cats",
+    "animal rehabilitation",
   ],
   authors: [{ name: "Codestam Technologies", url: "https://codestam.com" }],
   creator: "Codestam Technologies",
   openGraph: {
-    title: "ChromaSpace — Digital Art Gallery & Creative Studio",
+    title: "Paws & Hearts — Animal Rescue & Adoption Center",
     description:
-      "Explore the future of digital creativity through our curated collection of AI-generated masterpieces, interactive installations, and cutting-edge artistic expressions.",
+      "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending.",
     url: "https://codestam.com",
-    siteName: "ChromaSpace",
+    siteName: "Paws & Hearts",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChromaSpace — Digital Art Gallery & Creative Studio",
+    title: "Paws & Hearts — Animal Rescue & Adoption Center",
     description:
-      "Explore the future of digital creativity through our curated collection of AI-generated masterpieces, interactive installations, and cutting-edge artistic expressions.",
+      "Dedicated to rescuing, rehabilitating, and rehoming animals in need. Every life matters, and every story deserves a happy ending.",
   },
 };
 
@@ -47,9 +47,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <FeaturedArt />
-      <ArtistSpotlight />
-      <TechShowcase />
+      <OurStory />
+      <RescueAnimals />
+      <HowToHelp />
       <Footer />
     </div>
   );
