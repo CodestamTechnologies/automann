@@ -6,46 +6,47 @@ import { ThemeProvider } from "@/components/theme-provider";
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
   variable: "--font-josefin-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Architect Studio - Modern Architecture & Design Services",
-    template: "%s | Architect Studio"
+    default: "automann - Automate, Engage & Convert",
+    template: "%s | automann"
   },
-  description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects. From concept to completion, we create inspiring spaces that stand the test of time.",
+  description: "Run smart chatbots, send automated messages, track analytics, and convert leads effortlessly with one powerful WhatsApp automation tool. Official API integration, no coding needed.",
   keywords: [
-    "architecture",
-    "architectural design",
-    "modern architecture",
-    "residential design",
-    "commercial architecture",
-    "urban planning",
-    "interior design",
-    "landscape architecture",
-    "sustainable design",
-    "building design",
-    "New York architecture",
-    "award-winning design"
+    "WhatsApp automation",
+    "WhatsApp chatbot",
+    "WhatsApp marketing",
+    "automated messaging",
+    "WhatsApp API",
+    "lead generation",
+    "WhatsApp analytics",
+    "bulk messaging",
+    "WhatsApp business",
+    "chatbot builder",
+    "WhatsApp CRM",
+    "message automation"
   ],
-  authors: [{ name: "Codestam Technologies" }],
-  creator: "Codestam Technologies",
-  publisher: "Codestam Technologies",
+  authors: [{ name: "automann" }],
+  creator: "automann",
+  publisher: "automann",
   metadataBase: new URL("https://codestam.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Architect Studio - Modern Architecture & Design Services",
-    description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects.",
+    title: "automann - Automate, Engage & Convert",
+    description: "Run smart chatbots, send automated messages, track analytics, and convert leads effortlessly with one powerful WhatsApp automation tool.",
     url: "https://codestam.com",
-    siteName: "Architect Studio",
+    siteName: "automann",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&crop=center",
+        url: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop&crop=center",
         width: 1200,
         height: 630,
-        alt: "Architect Studio - Modern Architecture & Design"
+        alt: "automann"
       }
     ],
     locale: "en_US",
@@ -53,10 +54,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Architect Studio - Modern Architecture & Design Services",
-    description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects.",
-    images: ["https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&crop=center"],
-    creator: "@architectstudio"
+    title: "automann - Automate, Engage & Convert",
+    description: "Run smart chatbots, send automated messages, track analytics, and convert leads effortlessly with one powerful WhatsApp automation tool.",
+    images: ["https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop&crop=center"],
+    creator: "@automann"
   },
   robots: {
     index: true,
@@ -80,8 +81,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${josefinSans.className} font-sans antialiased`}>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <body className={`${josefinSans.variable} font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

@@ -1,40 +1,41 @@
 import { Metadata } from "next";
-import Navbar from "@/components/architecture/Navbar";
-import Hero from "@/components/architecture/Hero";
-import FeaturedProjects from "@/components/architecture/FeaturedProjects";
-import Services from "@/components/architecture/Services";
-import Testimonials from "@/components/architecture/Testimonials";
-import Footer from "@/components/architecture/Footer";
+import Navbar from "@/components/whatsapp/Navbar";
+import Hero from "@/components/whatsapp/Hero";
+import Features from "@/components/whatsapp/Features";
+import Testimonials from "@/components/whatsapp/Testimonials";
+import FAQ from "@/components/whatsapp/FAQ";
+import CTA from "@/components/whatsapp/CTA";
+import Footer from "@/components/whatsapp/Footer";
 
 export const metadata: Metadata = {
-  title: "Architect Studio - Modern Architecture & Design Services",
-  description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects. From concept to completion, we create inspiring spaces that stand the test of time.",
+  title: "automann - Automate, Engage & Convert",
+  description: "Run smart chatbots, send automated messages, track analytics, and convert leads effortlessly with one powerful WhatsApp automation tool. Official API integration, no coding needed.",
   keywords: [
-    "architecture",
-    "architectural design",
-    "modern architecture",
-    "residential design",
-    "commercial architecture",
-    "urban planning",
-    "interior design",
-    "landscape architecture",
-    "sustainable design",
-    "building design"
+    "WhatsApp automation",
+    "WhatsApp chatbot",
+    "WhatsApp marketing",
+    "automated messaging",
+    "WhatsApp API",
+    "lead generation",
+    "WhatsApp analytics",
+    "bulk messaging",
+    "WhatsApp business",
+    "chatbot builder"
   ],
-  authors: [{ name: "Codestam Technologies" }],
-  creator: "Codestam Technologies",
-  publisher: "Codestam Technologies",
+  authors: [{ name: "automann" }],
+  creator: "automann",
+  publisher: "automann",
   openGraph: {
-    title: "Architect Studio - Modern Architecture & Design Services",
-    description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects.",
+    title: "automann - Automate, Engage & Convert",
+    description: "Run smart chatbots, send automated messages, track analytics, and convert leads effortlessly with one powerful WhatsApp automation tool.",
     url: "https://codestam.com",
-    siteName: "Architect Studio",
+    siteName: "automann",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&crop=center",
+        url: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop&crop=center",
         width: 1200,
         height: 630,
-        alt: "Architect Studio - Modern Architecture & Design"
+        alt: "automann"
       }
     ],
     locale: "en_US",
@@ -42,34 +43,26 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Architect Studio - Modern Architecture & Design Services",
-    description: "Award-winning architectural design studio specializing in innovative residential, commercial, and cultural projects.",
-    images: ["https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&crop=center"]
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
-    }
-  },
-  verification: {
-    google: "your-google-verification-code"
+    title: "automann - Automate, Engage & Convert",
+    description: "Run smart chatbots, send automated messages, track analytics, and convert leads effortlessly with one powerful WhatsApp automation tool.",
+    images: ["https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop&crop=center"]
   }
 };
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen relative">
+      {/* Seamless green background overlay */}
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-green-50/40 via-emerald-50/30 to-green-50/40 dark:from-green-950/20 dark:via-emerald-950/15 dark:to-green-950/20"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.08),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(16,185,129,0.08),transparent_50%)]"></div>
+      </div>
       <Navbar />
       <Hero />
-      <FeaturedProjects />
-      <Services />
+      <Features />
       <Testimonials />
+      <FAQ />
+      <CTA />
       <Footer />
     </main>
   );
